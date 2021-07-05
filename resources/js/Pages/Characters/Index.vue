@@ -16,26 +16,55 @@
                         class="bg-white overflow-hidden shadow-sm sm:rounded-lg"
                     >
                         <div class="p-6 bg-white border-b border-gray-200">
-                            <label class="block text-gray-700">Gender:</label>
-                            <select
-                                v-model="form.gender"
-                                class="mt-1 w-full form-select"
+                            <div
+                                class="
+                                    flex flex-col
+                                    sm:flex-row sm:items-end
+                                    mb-4
+                                "
                             >
-                                <option value="" selected>All</option>
-                                <option
-                                    v-for="gender in genders"
-                                    :key="gender"
-                                    :value="gender"
-                                >
-                                    {{ gender }}
-                                </option>
-                            </select>
-                            <search-filter
-                                v-model="form.search"
-                                class="w-full max-w-md mr-4"
-                                @reset="reset"
-                            >
-                            </search-filter>
+                                <div class="mb-2 sm:mb-0">
+                                    <label
+                                        class="block text-gray-700"
+                                        for="gender"
+                                        >Gender:</label
+                                    >
+                                    <select
+                                        v-model="form.gender"
+                                        id="gender"
+                                        class="mt-1 form-select"
+                                    >
+                                        <option value="" selected>All</option>
+                                        <option
+                                            v-for="gender in genders"
+                                            :key="gender"
+                                            :value="gender"
+                                        >
+                                            {{ gender }}
+                                        </option>
+                                    </select>
+                                </div>
+                                <div class="flex">
+                                    <search-filter
+                                        v-model="form.search"
+                                        placeholder="Search by name..."
+                                        @reset="reset"
+                                    >
+                                    </search-filter>
+                                    <button
+                                        class="
+                                            ml-3
+                                            text-sm text-gray-500
+                                            hover:text-gray-700
+                                            focus:text-indigo-500
+                                        "
+                                        type="button"
+                                        @click="reset"
+                                    >
+                                        Reset
+                                    </button>
+                                </div>
+                            </div>
                             <div
                                 class="
                                     bg-white
@@ -64,12 +93,11 @@
                                         <th class="px-6 pt-6 pb-4">
                                             Eye color
                                         </th>
-                                        <th class="px-6 pt-6 pb-4">
-                                            Birth year
-                                        </th>
+                                        <th class="px-6 pt-6 pb-4">Born</th>
+                                        <th class="px-6 pt-6 pb-4">Died</th>
                                         <th class="px-6 pt-6 pb-4">Gender</th>
                                         <th class="px-6 pt-6 pb-4" colspan="2">
-                                            Films
+                                            Titles
                                         </th>
                                         <th class="px-6 pt-6 pb-4"></th>
                                     </tr>
@@ -89,7 +117,6 @@
                                                     py-4
                                                     flex
                                                     items-center
-                                                    focus:text-indigo-500
                                                 "
                                                 :href="
                                                     route(
@@ -108,7 +135,6 @@
                                                     py-4
                                                     flex
                                                     items-center
-                                                    focus:text-indigo-500
                                                 "
                                                 :href="
                                                     route(
@@ -117,7 +143,11 @@
                                                     )
                                                 "
                                             >
-                                                {{ character.height }}
+                                                {{
+                                                    character.height
+                                                        ? character.height
+                                                        : 'unknown'
+                                                }}
                                             </inertia-link>
                                         </td>
                                         <td class="border-t">
@@ -127,7 +157,6 @@
                                                     py-4
                                                     flex
                                                     items-center
-                                                    focus:text-indigo-500
                                                 "
                                                 :href="
                                                     route(
@@ -136,7 +165,11 @@
                                                     )
                                                 "
                                             >
-                                                {{ character.mass }}
+                                                {{
+                                                    character.mass
+                                                        ? character.mass
+                                                        : 'unknown'
+                                                }}
                                             </inertia-link>
                                         </td>
                                         <td class="border-t">
@@ -146,7 +179,6 @@
                                                     py-4
                                                     flex
                                                     items-center
-                                                    focus:text-indigo-500
                                                 "
                                                 :href="
                                                     route(
@@ -165,7 +197,6 @@
                                                     py-4
                                                     flex
                                                     items-center
-                                                    focus:text-indigo-500
                                                 "
                                                 :href="
                                                     route(
@@ -184,7 +215,6 @@
                                                     py-4
                                                     flex
                                                     items-center
-                                                    focus:text-indigo-500
                                                 "
                                                 :href="
                                                     route(
@@ -203,7 +233,6 @@
                                                     py-4
                                                     flex
                                                     items-center
-                                                    focus:text-indigo-500
                                                 "
                                                 :href="
                                                     route(
@@ -212,7 +241,9 @@
                                                     )
                                                 "
                                             >
-                                                {{ character.birth_year }}
+                                                {{
+                                                    starWarsYear(character.born)
+                                                }}
                                             </inertia-link>
                                         </td>
                                         <td class="border-t">
@@ -222,7 +253,26 @@
                                                     py-4
                                                     flex
                                                     items-center
-                                                    focus:text-indigo-500
+                                                "
+                                                :href="
+                                                    route(
+                                                        'characters.show',
+                                                        character.id
+                                                    )
+                                                "
+                                            >
+                                                {{
+                                                    starWarsYear(character.died)
+                                                }}
+                                            </inertia-link>
+                                        </td>
+                                        <td class="border-t">
+                                            <inertia-link
+                                                class="
+                                                    px-6
+                                                    py-4
+                                                    flex
+                                                    items-center
                                                 "
                                                 :href="
                                                     route(
@@ -245,7 +295,15 @@
                                                 "
                                                 tabindex="-1"
                                             >
-                                                Star Wars 1
+                                                <ul>
+                                                    <li
+                                                        v-for="(
+                                                            title, key
+                                                        ) in character.titles"
+                                                        :key="key"
+                                                        v-text="title"
+                                                    ></li>
+                                                </ul>
                                             </inertia-link>
                                         </td>
                                         <td class="border-t w-px">
@@ -316,7 +374,7 @@ export default {
             title: '🧑 Characters from Star Wars',
             form: {
                 search: this.filters.search,
-                gender: this.filters.gender,
+                gender: this.filters.gender ? this.filters.gender : '',
             },
         };
     },
@@ -333,6 +391,13 @@ export default {
     methods: {
         reset() {
             this.form = mapValues(this.form, () => null);
+        },
+        starWarsYear(year) {
+            if (year === null || year === '') {
+                return '-';
+            }
+
+            return year > 0 ? `${year}ABY` : `${Math.abs(year)}BBY`;
         },
     },
 };

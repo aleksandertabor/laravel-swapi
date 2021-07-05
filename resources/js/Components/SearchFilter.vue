@@ -1,8 +1,8 @@
 <template>
-    <div class="flex items-center">
+    <div class="flex h-full items-center">
         <div class="flex w-full bg-white shadow rounded">
             <input
-                class="relative w-full px-6 py-3 rounded-r focus:ring"
+                class="relative w-full px-6 rounded-r sm:border-l-0 focus:ring"
                 autocomplete="off"
                 type="text"
                 name="search"
@@ -11,18 +11,6 @@
                 @input="$emit('update:modelValue', $event.target.value)"
             />
         </div>
-        <button
-            class="
-                ml-3
-                text-sm text-gray-500
-                hover:text-gray-700
-                focus:text-indigo-500
-            "
-            type="button"
-            @click="$emit('reset')"
-        >
-            Reset
-        </button>
     </div>
 </template>
 

@@ -29,8 +29,13 @@ class CharacterResource extends JsonResource
             'hair_color' => $this->hair_color,
             'skin_color' => $this->skin_color,
             'eye_color' => $this->eye_color,
-            'birth_year' => $this->birth_year,
             'gender' => $this->gender,
+            'culture' => $this->culture,
+            'born' => $this->born,
+            'died' => $this->died,
+            'titles' => $this->whenLoaded('movies', function () {
+                return $this->movies->pluck('title');
+            })
         ];
     }
 }

@@ -37,10 +37,7 @@ class CharactersController extends Controller
         $this->repository->addFilter(new NameFilter($filters->get('search')));
         $this->repository->addFilter(new GenderFilter($filters->get('gender')));
 
-        $characters = $this->repository->paginate(
-            10,
-            ['id', 'name', 'mass', 'height', 'hair_color', 'skin_color', 'eye_color', 'birth_year', 'gender']
-        );
+        $characters = $this->repository->with(['movies'])->paginate(10);
 
         return Inertia::render('Characters/Index', [
             'filters' => $filters,
@@ -56,9 +53,8 @@ class CharactersController extends Controller
      */
     public function show(int $id) : Response
     {
-        $character = $this->repository->getById(
-            $id,
-            ['id', 'name', 'mass', 'height', 'hair_color', 'skin_color', 'eye_color', 'birth_year', 'gender']
+        $character = $this->repository->with(['movies'])->getById(
+            $id
         );
 
         return Inertia::render('Characters/Show', [

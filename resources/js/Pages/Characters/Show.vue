@@ -24,41 +24,123 @@
                                 class="flex flex-col space-y-4"
                             >
                                 <div class="mt-4">
-                                    <breeze-label for="name" value="Name:" />
+                                    <p>
+                                        <strong>Name:</strong>
 
-                                    <breeze-input
-                                        id="name"
-                                        type="text"
-                                        class="mt-1 block w-full"
-                                        v-model="form.name"
-                                    />
+                                        <breeze-input
+                                            id="name"
+                                            type="text"
+                                            class="mt-1 block w-full"
+                                            v-model="form.name"
+                                        />
+                                    </p>
                                 </div>
 
                                 <div class="mt-4">
-                                    <breeze-label
-                                        for="gender"
-                                        value="Gender:"
-                                    />
+                                    <p>
+                                        <strong>Gender:</strong>
 
-                                    <breeze-input
-                                        id="gender"
-                                        type="text"
-                                        class="mt-1 block w-full"
-                                        v-model="form.gender"
-                                    />
+                                        <breeze-input
+                                            id="gender"
+                                            type="text"
+                                            class="mt-1 block w-full"
+                                            v-model="form.gender"
+                                        />
+                                    </p>
                                 </div>
 
-                                <template
-                                    v-for="(value, key) in character"
-                                    :key="key"
-                                >
-                                    <div class="mt-4">
-                                        <p>
-                                            {{ key }}:
-                                            <span>{{ value }}</span>
-                                        </p>
-                                    </div>
-                                </template>
+                                <div class="mt-4">
+                                    <p>
+                                        <strong>Culture:</strong>
+
+                                        <breeze-input
+                                            id="gender"
+                                            type="text"
+                                            class="mt-1 block w-full"
+                                            v-model="form.culture"
+                                        />
+                                    </p>
+                                </div>
+
+                                <div class="mt-4">
+                                    <p>
+                                        <strong>Born:</strong>
+
+                                        {{ bornYear }}
+                                        <breeze-input
+                                            id="born"
+                                            type="number"
+                                            step="0.1"
+                                            class="mt-1 block w-full"
+                                            v-model="form.born"
+                                        />
+                                    </p>
+                                </div>
+
+                                <div class="mt-4">
+                                    <p>
+                                        <strong>Died:</strong>
+{{ diedYear }}
+                                        <breeze-input
+                                            id="died"
+                                            type="number"
+                                            step="0.1"
+                                            class="mt-1 block w-full"
+                                            v-model="form.died"
+                                        />
+                                    </p>
+                                </div>
+
+                                <div class="mt-4">
+                                    <p>
+                                        <strong>Mass (kg): </strong>
+                                        <span>{{ character.mass }}</span>
+                                    </p>
+                                </div>
+
+                                <div class="mt-4">
+                                    <p>
+                                        <strong>Height (cm): </strong>
+                                        <span>{{ character.height }}</span>
+                                    </p>
+                                </div>
+
+                                <div class="mt-4">
+                                    <p>
+                                        <strong>Hair color: </strong>
+                                        <span>{{ character.hair_color }}</span>
+                                    </p>
+                                </div>
+
+                                <div class="mt-4">
+                                    <p>
+                                        <strong>Skin color: </strong>
+                                        <span>{{ character.skin_color }}</span>
+                                    </p>
+                                </div>
+
+                                <div class="mt-4">
+                                    <p>
+                                        <strong>Eye color: </strong>
+                                        <span>{{ character.eye_color }}</span>
+                                    </p>
+                                </div>
+
+                                <div class="mt-4">
+                                    <p>
+                                        <strong>Titles:</strong>
+                                        <ul class="list-disc">
+                                            <li
+                                                v-for="(
+                                                    title, key
+                                                ) in character.titles"
+                                                :key="key"
+                                                v-text="title"
+                                                class="ml-5"
+                                            ></li>
+                                        </ul>
+                                    </p>
+                                </div>
 
                                 <div class="flex items-center">
                                     <breeze-button
@@ -110,12 +192,21 @@ export default {
                 id: this.id,
                 name: this.character.name,
                 gender: this.character.gender,
+                culture: this.character.culture,
+                born: this.character.born,
+                died: this.character.died,
             }),
         };
     },
     computed: {
         title() {
             return this.character.name;
+        },
+        bornYear() {
+            return this.starWarsYear(this.form.born);
+        },
+        diedYear() {
+            return this.starWarsYear(this.form.died);
         },
     },
     methods: {
@@ -125,6 +216,13 @@ export default {
                 this.form
             );
         },
+        starWarsYear(year) {
+            if (year === null || year === '') {
+                return '-';
+            }
+
+            return year > 0 ? `${year}ABY` : `${Math.abs(year)}BBY`;
+        }
     },
 };
 </script>

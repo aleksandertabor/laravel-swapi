@@ -15,16 +15,18 @@ class CreateCharactersTable extends Migration
     {
         Schema::create('characters', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('api_id');
+            $table->unsignedBigInteger('api_id')->nullable()->comment('ID from SWAPI');
             $table->string('name')->unique();
-            $table->string('height');
-            $table->string('mass');
+            $table->unsignedSmallInteger('height')->nullable();
+            $table->unsignedSmallInteger('mass')->nullable();
             $table->string('hair_color');
             $table->string('skin_color');
             $table->string('eye_color');
-            $table->string('birth_year');
             $table->string('gender');
             $table->string('homeworld');
+            $table->string('culture')->nullable();
+            $table->float('born', 8, 1)->nullable();
+            $table->float('died', 8, 1)->nullable();
             $table->json('films');
             $table->json('species');
             $table->json('starships');

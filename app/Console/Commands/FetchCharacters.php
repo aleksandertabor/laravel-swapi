@@ -4,8 +4,12 @@ namespace App\Console\Commands;
 
 use Exception;
 use Illuminate\Console\Command;
+use App\Transformers\CharacterData;
+use App\Jobs\SynchroniseFilmsWithCharacters;
+use App\Repositories\FilmRepositoryInterface;
 use App\Repositories\SwapiRepositoryInterface;
 use App\Repositories\CharacterRepositoryInterface;
+use App\Transformers\FilmData;
 
 class FetchCharacters extends Command
 {
@@ -38,14 +42,20 @@ class FetchCharacters extends Command
      *
      * @return int
      */
-    public function handle(SwapiRepositoryInterface $swapiRepository, CharacterRepositoryInterface $characterRepository)
+    public function handle(SwapiRepositoryInterface $swapiRepository, CharacterRepositoryInterface $characterRepository, FilmRepositoryInterface $filmRepository)
     {
         $this->comment("Start fetching characters...");
 
         try {
             $characters = $swapiRepository->getCharacters($this->argument('amount'));
 
-            $characterRepository->upsert($characters);
+            $characterRepository->upsert(CharacterData::fromApi($characters));
+
+            $films = $swapiRepository->getFilms();
+
+            $filmRepository->upsert(FilmData::fromApi($films));
+
+            SynchroniseFilmsWithCharacters::dispatch();
 
             $this->info("Fetched {$characters->count()} characters.");
         } catch (Exception $e) {

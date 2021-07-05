@@ -3,12 +3,25 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Casts\AsCollection;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
 class Character extends Model
 {
     use HasFactory;
+
+    /**
+     * The attributes that should be cast.
+     *
+     * @var array
+     */
+    protected $casts = [
+        'films' => AsCollection::class,
+        'species' => AsCollection::class,
+        'starships' => AsCollection::class,
+        'vehicles' => AsCollection::class,
+    ];
 
     /**
      * The attributes that aren't mass assignable.
@@ -20,7 +33,7 @@ class Character extends Model
     /**
      * The films that character has been in.
      */
-    public function films() : BelongsToMany
+    public function movies() : BelongsToMany
     {
         return $this->belongsToMany(Film::class);
     }

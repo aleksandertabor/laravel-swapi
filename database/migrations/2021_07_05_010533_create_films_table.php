@@ -15,7 +15,10 @@ class CreateFilmsTable extends Migration
     {
         Schema::create('films', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('api_id')->nullable()->comment('ID from SWAPI');;
             $table->string('title');
+            $table->json('characters');
+            $table->string('url')->unique();
             $table->timestamps();
         });
     }

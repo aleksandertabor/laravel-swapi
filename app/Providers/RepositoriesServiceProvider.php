@@ -2,9 +2,11 @@
 
 namespace App\Providers;
 
+use App\Repositories\FilmRepository;
 use App\Repositories\SwapiRepository;
 use Illuminate\Support\ServiceProvider;
 use App\Repositories\CharacterRepository;
+use App\Repositories\FilmRepositoryInterface;
 use App\Repositories\SwapiRepositoryInterface;
 use App\Repositories\CharacterRepositoryInterface;
 
@@ -28,6 +30,7 @@ class RepositoriesServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->app->bind(CharacterRepositoryInterface::class, CharacterRepository::class);
+        $this->app->bind(FilmRepositoryInterface::class, FilmRepository::class);
         $this->app->bind(SwapiRepositoryInterface::class, SwapiRepository::class);
     }
 }

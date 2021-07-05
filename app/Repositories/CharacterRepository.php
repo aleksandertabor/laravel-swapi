@@ -7,6 +7,7 @@ use App\Filters\Filter;
 use App\Models\Character;
 use Illuminate\Support\Str;
 use Illuminate\Support\Collection;
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Pagination\LengthAwarePaginator;
 use App\Repositories\CharacterRepositoryInterface;
 
@@ -62,18 +63,6 @@ class CharacterRepository implements CharacterRepositoryInterface
      */
     public function upsert(Collection $data) : void
     {
-        $data->transform(function ($item, $key) {
-            return array_merge($item, [
-                'api_id' => Str::of($item['url'])->basename(),
-                'films' => json_encode($item['films']),
-                'species' => json_encode($item['species']),
-                'starships' => json_encode($item['starships']),
-                'vehicles' => json_encode($item['vehicles']),
-                'created' => Carbon::parse($item['created']),
-                'edited' => Carbon::parse($item['edited']),
-            ]);
-        });
-
         $this->model->upsert($data->toArray(), ['api_id']);
     }
 
@@ -99,6 +88,19 @@ class CharacterRepository implements CharacterRepositoryInterface
     {
         $this->filters->push($filter);
     }
+
+    /**
+     * @param array $relations
+     *
+     * @return void
+     */
+    public function with(array $relations) : self
+    {
+        $this->model = $this->model->with($relations);
+
+        return $this;
+    }
+
 
     /**
      * @return void

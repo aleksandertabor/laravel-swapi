@@ -14,4 +14,5 @@ interface CharacterRepositoryInterface
     public function upsert(Collection $data) : void;
     public function update(int $id, Collection $data) : void;
     public function addFilter(Filter $filter) : void;
+    public function with(array $relations) : self;
 }

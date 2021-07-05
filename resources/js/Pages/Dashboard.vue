@@ -1,5 +1,7 @@
 <template>
     <breeze-authenticated-layout>
+        <inertia-head :title="title" />
+
         <template #header>
             <h2 class="font-semibold text-xl text-gray-800 leading-tight">
                 Dashboard
@@ -11,6 +13,20 @@
                 <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                     <div class="p-6 bg-white border-b border-gray-200">
                         You're logged in!
+
+                        <p class="mt-2">
+                            Check Characters page:
+                            <inertia-link
+                                :href="route('characters')"
+                                class="
+                                    underline
+                                    text-sm text-gray-600
+                                    hover:text-gray-900
+                                "
+                            >
+                                Click
+                            </inertia-link>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -20,10 +36,17 @@
 
 <script>
 import BreezeAuthenticatedLayout from '@/Layouts/Authenticated';
+import BreezeButton from '@/Components/Button';
 
 export default {
     components: {
         BreezeAuthenticatedLayout,
+        BreezeButton,
+    },
+    data() {
+        return {
+            title: 'Dashboard',
+        };
     },
 };
 </script>
