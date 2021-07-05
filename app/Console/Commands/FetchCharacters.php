@@ -40,9 +40,13 @@ class FetchCharacters extends Command
     /**
      * Execute the console command.
      *
-     * @return int
+     * @param SwapiRepositoryInterface $swapiRepository
+     * @param CharacterRepositoryInterface $characterRepository
+     * @param FilmRepositoryInterface $filmRepository
+     *
+     * @return void
      */
-    public function handle(SwapiRepositoryInterface $swapiRepository, CharacterRepositoryInterface $characterRepository, FilmRepositoryInterface $filmRepository)
+    public function handle(SwapiRepositoryInterface $swapiRepository, CharacterRepositoryInterface $characterRepository, FilmRepositoryInterface $filmRepository) : void
     {
         $this->comment("Start fetching characters...");
 
