@@ -4,10 +4,13 @@ namespace App\Http\Controllers;
 
 use Inertia\Inertia;
 use Inertia\Response;
+use Illuminate\Http\RedirectResponse;
 use App\Filters\Characters\NameFilter;
 use App\Filters\Characters\GenderFilter;
+use Illuminate\Support\Facades\Redirect;
 use App\Repositories\CharacterRepositoryInterface;
 use App\Http\Resources\Characters\CharacterResource;
+use App\Http\Requests\Characters\UpdateCharacterRequest;
 use App\Http\Requests\Characters\FilterCharactersRequest;
 
 class CharactersController extends Controller
@@ -61,5 +64,21 @@ class CharactersController extends Controller
         return Inertia::render('Characters/Show', [
             'character' => new CharacterResource($character)
         ]);
+    }
+
+
+    /**
+     * @param UpdateCharacterRequest $request
+     * @param int $id
+     *
+     * @return \Illuminate\Http\RedirectResponse
+     */
+    public function update(UpdateCharacterRequest $request, int $id) : RedirectResponse
+    {
+        $data = $request->validated();
+
+        $this->repository->update($id, $data);
+
+        return Redirect::back()->with('success', 'Character updated.');
     }
 }

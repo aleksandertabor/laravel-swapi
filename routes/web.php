@@ -23,6 +23,8 @@ Route::prefix('characters')->middleware(['auth', 'verified'])->group(function ()
     Route::get('/', [CharactersController::class, 'index'])->name('characters');
 
     Route::get('/{id}', [CharactersController::class, 'show'])->name('characters.show');
+
+    Route::patch('/{id}', [CharactersController::class, 'update'])->name('characters.update');
 });
 
 require __DIR__.'/auth.php';

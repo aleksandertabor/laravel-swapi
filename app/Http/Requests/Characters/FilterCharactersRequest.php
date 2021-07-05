@@ -35,7 +35,7 @@ class FilterCharactersRequest extends FormRequest
     /**
      * Get the validated data from the request.
      *
-     * @return array
+     * @return Collection
      */
     public function validated() : Collection
     {

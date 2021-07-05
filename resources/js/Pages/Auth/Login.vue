@@ -1,4 +1,6 @@
 <template>
+    <inertia-head :title="title" />
+
     <breeze-validation-errors class="mb-4" />
 
     <div v-if="status" class="mb-4 font-medium text-sm text-green-600">
@@ -95,6 +97,7 @@ export default {
 
     data() {
         return {
+            title: 'Login',
             form: this.$inertia.form({
                 email: '',
                 password: '',

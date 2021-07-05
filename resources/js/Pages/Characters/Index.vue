@@ -1,10 +1,13 @@
 <template>
     <div>
         <breeze-authenticated-layout>
+            <inertia-head :title="title" />
+
             <template #header>
-                <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-                    🧑 Characters from Star Wars
-                </h2>
+                <h2
+                    class="font-semibold text-xl text-gray-800 leading-tight"
+                    v-text="title"
+                ></h2>
             </template>
 
             <div class="py-12">
@@ -310,6 +313,7 @@ export default {
     },
     data() {
         return {
+            title: '🧑 Characters from Star Wars',
             form: {
                 search: this.filters.search,
                 gender: this.filters.gender,
