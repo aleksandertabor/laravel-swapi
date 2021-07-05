@@ -12387,6 +12387,11 @@ select {
   border-color: rgba(131, 24, 67, var(--tw-divide-opacity));
 }
 
+.divide-star-wars > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-opacity: 1;
+  border-color: rgba(255, 227, 0, var(--tw-divide-opacity));
+}
+
 .divide-opacity-0 > :not([hidden]) ~ :not([hidden]) {
   --tw-divide-opacity: 0;
 }
@@ -13539,6 +13544,11 @@ select {
   border-color: rgba(131, 24, 67, var(--tw-border-opacity));
 }
 
+.border-star-wars {
+  --tw-border-opacity: 1;
+  border-color: rgba(255, 227, 0, var(--tw-border-opacity));
+}
+
 .group:hover .group-hover\:border-transparent {
   border-color: transparent;
 }
@@ -13955,6 +13965,11 @@ select {
 .group:hover .group-hover\:border-pink-900 {
   --tw-border-opacity: 1;
   border-color: rgba(131, 24, 67, var(--tw-border-opacity));
+}
+
+.group:hover .group-hover\:border-star-wars {
+  --tw-border-opacity: 1;
+  border-color: rgba(255, 227, 0, var(--tw-border-opacity));
 }
 
 .focus-within\:border-transparent:focus-within {
@@ -14375,6 +14390,11 @@ select {
   border-color: rgba(131, 24, 67, var(--tw-border-opacity));
 }
 
+.focus-within\:border-star-wars:focus-within {
+  --tw-border-opacity: 1;
+  border-color: rgba(255, 227, 0, var(--tw-border-opacity));
+}
+
 .hover\:border-transparent:hover {
   border-color: transparent;
 }
@@ -14793,6 +14813,11 @@ select {
   border-color: rgba(131, 24, 67, var(--tw-border-opacity));
 }
 
+.hover\:border-star-wars:hover {
+  --tw-border-opacity: 1;
+  border-color: rgba(255, 227, 0, var(--tw-border-opacity));
+}
+
 .focus\:border-transparent:focus {
   border-color: transparent;
 }
@@ -15209,6 +15234,11 @@ select {
 .focus\:border-pink-900:focus {
   --tw-border-opacity: 1;
   border-color: rgba(131, 24, 67, var(--tw-border-opacity));
+}
+
+.focus\:border-star-wars:focus {
+  --tw-border-opacity: 1;
+  border-color: rgba(255, 227, 0, var(--tw-border-opacity));
 }
 
 .border-opacity-0 {
@@ -15929,6 +15959,11 @@ select {
   background-color: rgba(131, 24, 67, var(--tw-bg-opacity));
 }
 
+.bg-star-wars {
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 227, 0, var(--tw-bg-opacity));
+}
+
 .group:hover .group-hover\:bg-transparent {
   background-color: transparent;
 }
@@ -16345,6 +16380,11 @@ select {
 .group:hover .group-hover\:bg-pink-900 {
   --tw-bg-opacity: 1;
   background-color: rgba(131, 24, 67, var(--tw-bg-opacity));
+}
+
+.group:hover .group-hover\:bg-star-wars {
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 227, 0, var(--tw-bg-opacity));
 }
 
 .focus-within\:bg-transparent:focus-within {
@@ -16765,6 +16805,11 @@ select {
   background-color: rgba(131, 24, 67, var(--tw-bg-opacity));
 }
 
+.focus-within\:bg-star-wars:focus-within {
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 227, 0, var(--tw-bg-opacity));
+}
+
 .hover\:bg-transparent:hover {
   background-color: transparent;
 }
@@ -17183,6 +17228,11 @@ select {
   background-color: rgba(131, 24, 67, var(--tw-bg-opacity));
 }
 
+.hover\:bg-star-wars:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 227, 0, var(--tw-bg-opacity));
+}
+
 .focus\:bg-transparent:focus {
   background-color: transparent;
 }
@@ -17599,6 +17649,11 @@ select {
 .focus\:bg-pink-900:focus {
   --tw-bg-opacity: 1;
   background-color: rgba(131, 24, 67, var(--tw-bg-opacity));
+}
+
+.focus\:bg-star-wars:focus {
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 227, 0, var(--tw-bg-opacity));
 }
 
 .bg-opacity-0 {
@@ -18357,6 +18412,11 @@ select {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(131, 24, 67, 0));
 }
 
+.from-star-wars {
+  --tw-gradient-from: #FFE300;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 227, 0, 0));
+}
+
 .hover\:from-transparent:hover {
   --tw-gradient-from: transparent;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -18775,6 +18835,11 @@ select {
 .hover\:from-pink-900:hover {
   --tw-gradient-from: #831843;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(131, 24, 67, 0));
+}
+
+.hover\:from-star-wars:hover {
+  --tw-gradient-from: #FFE300;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 227, 0, 0));
 }
 
 .focus\:from-transparent:focus {
@@ -19197,6 +19262,11 @@ select {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(131, 24, 67, 0));
 }
 
+.focus\:from-star-wars:focus {
+  --tw-gradient-from: #FFE300;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 227, 0, 0));
+}
+
 .via-transparent {
   --tw-gradient-stops: var(--tw-gradient-from), transparent, var(--tw-gradient-to, rgba(0, 0, 0, 0));
 }
@@ -19531,6 +19601,10 @@ select {
 
 .via-pink-900 {
   --tw-gradient-stops: var(--tw-gradient-from), #831843, var(--tw-gradient-to, rgba(131, 24, 67, 0));
+}
+
+.via-star-wars {
+  --tw-gradient-stops: var(--tw-gradient-from), #FFE300, var(--tw-gradient-to, rgba(255, 227, 0, 0));
 }
 
 .hover\:via-transparent:hover {
@@ -19869,6 +19943,10 @@ select {
   --tw-gradient-stops: var(--tw-gradient-from), #831843, var(--tw-gradient-to, rgba(131, 24, 67, 0));
 }
 
+.hover\:via-star-wars:hover {
+  --tw-gradient-stops: var(--tw-gradient-from), #FFE300, var(--tw-gradient-to, rgba(255, 227, 0, 0));
+}
+
 .focus\:via-transparent:focus {
   --tw-gradient-stops: var(--tw-gradient-from), transparent, var(--tw-gradient-to, rgba(0, 0, 0, 0));
 }
@@ -20203,6 +20281,10 @@ select {
 
 .focus\:via-pink-900:focus {
   --tw-gradient-stops: var(--tw-gradient-from), #831843, var(--tw-gradient-to, rgba(131, 24, 67, 0));
+}
+
+.focus\:via-star-wars:focus {
+  --tw-gradient-stops: var(--tw-gradient-from), #FFE300, var(--tw-gradient-to, rgba(255, 227, 0, 0));
 }
 
 .to-transparent {
@@ -20541,6 +20623,10 @@ select {
   --tw-gradient-to: #831843;
 }
 
+.to-star-wars {
+  --tw-gradient-to: #FFE300;
+}
+
 .hover\:to-transparent:hover {
   --tw-gradient-to: transparent;
 }
@@ -20877,6 +20963,10 @@ select {
   --tw-gradient-to: #831843;
 }
 
+.hover\:to-star-wars:hover {
+  --tw-gradient-to: #FFE300;
+}
+
 .focus\:to-transparent:focus {
   --tw-gradient-to: transparent;
 }
@@ -21211,6 +21301,10 @@ select {
 
 .focus\:to-pink-900:focus {
   --tw-gradient-to: #831843;
+}
+
+.focus\:to-star-wars:focus {
+  --tw-gradient-to: #FFE300;
 }
 
 .decoration-slice {
@@ -23196,6 +23290,11 @@ select {
   color: rgba(131, 24, 67, var(--tw-text-opacity));
 }
 
+.text-star-wars {
+  --tw-text-opacity: 1;
+  color: rgba(255, 227, 0, var(--tw-text-opacity));
+}
+
 .group:hover .group-hover\:text-transparent {
   color: transparent;
 }
@@ -23612,6 +23711,11 @@ select {
 .group:hover .group-hover\:text-pink-900 {
   --tw-text-opacity: 1;
   color: rgba(131, 24, 67, var(--tw-text-opacity));
+}
+
+.group:hover .group-hover\:text-star-wars {
+  --tw-text-opacity: 1;
+  color: rgba(255, 227, 0, var(--tw-text-opacity));
 }
 
 .focus-within\:text-transparent:focus-within {
@@ -24032,6 +24136,11 @@ select {
   color: rgba(131, 24, 67, var(--tw-text-opacity));
 }
 
+.focus-within\:text-star-wars:focus-within {
+  --tw-text-opacity: 1;
+  color: rgba(255, 227, 0, var(--tw-text-opacity));
+}
+
 .hover\:text-transparent:hover {
   color: transparent;
 }
@@ -24450,6 +24559,11 @@ select {
   color: rgba(131, 24, 67, var(--tw-text-opacity));
 }
 
+.hover\:text-star-wars:hover {
+  --tw-text-opacity: 1;
+  color: rgba(255, 227, 0, var(--tw-text-opacity));
+}
+
 .focus\:text-transparent:focus {
   color: transparent;
 }
@@ -24866,6 +24980,11 @@ select {
 .focus\:text-pink-900:focus {
   --tw-text-opacity: 1;
   color: rgba(131, 24, 67, var(--tw-text-opacity));
+}
+
+.focus\:text-star-wars:focus {
+  --tw-text-opacity: 1;
+  color: rgba(255, 227, 0, var(--tw-text-opacity));
 }
 
 .text-opacity-0 {
@@ -26492,6 +26611,21 @@ select {
   color: rgba(131, 24, 67, var(--tw-placeholder-opacity));
 }
 
+.placeholder-star-wars::-moz-placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgba(255, 227, 0, var(--tw-placeholder-opacity));
+}
+
+.placeholder-star-wars:-ms-input-placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgba(255, 227, 0, var(--tw-placeholder-opacity));
+}
+
+.placeholder-star-wars::placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgba(255, 227, 0, var(--tw-placeholder-opacity));
+}
+
 .focus\:placeholder-transparent:focus::-moz-placeholder {
   color: transparent;
 }
@@ -27744,6 +27878,21 @@ select {
 .focus\:placeholder-pink-900:focus::placeholder {
   --tw-placeholder-opacity: 1;
   color: rgba(131, 24, 67, var(--tw-placeholder-opacity));
+}
+
+.focus\:placeholder-star-wars:focus::-moz-placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgba(255, 227, 0, var(--tw-placeholder-opacity));
+}
+
+.focus\:placeholder-star-wars:focus:-ms-input-placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgba(255, 227, 0, var(--tw-placeholder-opacity));
+}
+
+.focus\:placeholder-star-wars:focus::placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgba(255, 227, 0, var(--tw-placeholder-opacity));
 }
 
 .placeholder-opacity-0::-moz-placeholder {
@@ -29390,6 +29539,11 @@ select {
   --tw-ring-color: rgba(131, 24, 67, var(--tw-ring-opacity));
 }
 
+.ring-star-wars {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgba(255, 227, 0, var(--tw-ring-opacity));
+}
+
 .focus-within\:ring-transparent:focus-within {
   --tw-ring-color: transparent;
 }
@@ -29808,6 +29962,11 @@ select {
   --tw-ring-color: rgba(131, 24, 67, var(--tw-ring-opacity));
 }
 
+.focus-within\:ring-star-wars:focus-within {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgba(255, 227, 0, var(--tw-ring-opacity));
+}
+
 .focus\:ring-transparent:focus {
   --tw-ring-color: transparent;
 }
@@ -30224,6 +30383,11 @@ select {
 .focus\:ring-pink-900:focus {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgba(131, 24, 67, var(--tw-ring-opacity));
+}
+
+.focus\:ring-star-wars:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgba(255, 227, 0, var(--tw-ring-opacity));
 }
 
 .ring-opacity-0 {
@@ -30802,6 +30966,10 @@ select {
   --tw-ring-offset-color: #831843;
 }
 
+.ring-offset-star-wars {
+  --tw-ring-offset-color: #FFE300;
+}
+
 .focus-within\:ring-offset-transparent:focus-within {
   --tw-ring-offset-color: transparent;
 }
@@ -31138,6 +31306,10 @@ select {
   --tw-ring-offset-color: #831843;
 }
 
+.focus-within\:ring-offset-star-wars:focus-within {
+  --tw-ring-offset-color: #FFE300;
+}
+
 .focus\:ring-offset-transparent:focus {
   --tw-ring-offset-color: transparent;
 }
@@ -31472,6 +31644,10 @@ select {
 
 .focus\:ring-offset-pink-900:focus {
   --tw-ring-offset-color: #831843;
+}
+
+.focus\:ring-offset-star-wars:focus {
+  --tw-ring-offset-color: #FFE300;
 }
 
 .filter {
@@ -43682,6 +43858,11 @@ select {
     border-color: rgba(131, 24, 67, var(--tw-divide-opacity));
   }
 
+  .sm\:divide-star-wars > :not([hidden]) ~ :not([hidden]) {
+    --tw-divide-opacity: 1;
+    border-color: rgba(255, 227, 0, var(--tw-divide-opacity));
+  }
+
   .sm\:divide-opacity-0 > :not([hidden]) ~ :not([hidden]) {
     --tw-divide-opacity: 0;
   }
@@ -44834,6 +45015,11 @@ select {
     border-color: rgba(131, 24, 67, var(--tw-border-opacity));
   }
 
+  .sm\:border-star-wars {
+    --tw-border-opacity: 1;
+    border-color: rgba(255, 227, 0, var(--tw-border-opacity));
+  }
+
   .group:hover .sm\:group-hover\:border-transparent {
     border-color: transparent;
   }
@@ -45250,6 +45436,11 @@ select {
   .group:hover .sm\:group-hover\:border-pink-900 {
     --tw-border-opacity: 1;
     border-color: rgba(131, 24, 67, var(--tw-border-opacity));
+  }
+
+  .group:hover .sm\:group-hover\:border-star-wars {
+    --tw-border-opacity: 1;
+    border-color: rgba(255, 227, 0, var(--tw-border-opacity));
   }
 
   .sm\:focus-within\:border-transparent:focus-within {
@@ -45670,6 +45861,11 @@ select {
     border-color: rgba(131, 24, 67, var(--tw-border-opacity));
   }
 
+  .sm\:focus-within\:border-star-wars:focus-within {
+    --tw-border-opacity: 1;
+    border-color: rgba(255, 227, 0, var(--tw-border-opacity));
+  }
+
   .sm\:hover\:border-transparent:hover {
     border-color: transparent;
   }
@@ -46088,6 +46284,11 @@ select {
     border-color: rgba(131, 24, 67, var(--tw-border-opacity));
   }
 
+  .sm\:hover\:border-star-wars:hover {
+    --tw-border-opacity: 1;
+    border-color: rgba(255, 227, 0, var(--tw-border-opacity));
+  }
+
   .sm\:focus\:border-transparent:focus {
     border-color: transparent;
   }
@@ -46504,6 +46705,11 @@ select {
   .sm\:focus\:border-pink-900:focus {
     --tw-border-opacity: 1;
     border-color: rgba(131, 24, 67, var(--tw-border-opacity));
+  }
+
+  .sm\:focus\:border-star-wars:focus {
+    --tw-border-opacity: 1;
+    border-color: rgba(255, 227, 0, var(--tw-border-opacity));
   }
 
   .sm\:border-opacity-0 {
@@ -47224,6 +47430,11 @@ select {
     background-color: rgba(131, 24, 67, var(--tw-bg-opacity));
   }
 
+  .sm\:bg-star-wars {
+    --tw-bg-opacity: 1;
+    background-color: rgba(255, 227, 0, var(--tw-bg-opacity));
+  }
+
   .group:hover .sm\:group-hover\:bg-transparent {
     background-color: transparent;
   }
@@ -47640,6 +47851,11 @@ select {
   .group:hover .sm\:group-hover\:bg-pink-900 {
     --tw-bg-opacity: 1;
     background-color: rgba(131, 24, 67, var(--tw-bg-opacity));
+  }
+
+  .group:hover .sm\:group-hover\:bg-star-wars {
+    --tw-bg-opacity: 1;
+    background-color: rgba(255, 227, 0, var(--tw-bg-opacity));
   }
 
   .sm\:focus-within\:bg-transparent:focus-within {
@@ -48060,6 +48276,11 @@ select {
     background-color: rgba(131, 24, 67, var(--tw-bg-opacity));
   }
 
+  .sm\:focus-within\:bg-star-wars:focus-within {
+    --tw-bg-opacity: 1;
+    background-color: rgba(255, 227, 0, var(--tw-bg-opacity));
+  }
+
   .sm\:hover\:bg-transparent:hover {
     background-color: transparent;
   }
@@ -48478,6 +48699,11 @@ select {
     background-color: rgba(131, 24, 67, var(--tw-bg-opacity));
   }
 
+  .sm\:hover\:bg-star-wars:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgba(255, 227, 0, var(--tw-bg-opacity));
+  }
+
   .sm\:focus\:bg-transparent:focus {
     background-color: transparent;
   }
@@ -48894,6 +49120,11 @@ select {
   .sm\:focus\:bg-pink-900:focus {
     --tw-bg-opacity: 1;
     background-color: rgba(131, 24, 67, var(--tw-bg-opacity));
+  }
+
+  .sm\:focus\:bg-star-wars:focus {
+    --tw-bg-opacity: 1;
+    background-color: rgba(255, 227, 0, var(--tw-bg-opacity));
   }
 
   .sm\:bg-opacity-0 {
@@ -49652,6 +49883,11 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(131, 24, 67, 0));
   }
 
+  .sm\:from-star-wars {
+    --tw-gradient-from: #FFE300;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 227, 0, 0));
+  }
+
   .sm\:hover\:from-transparent:hover {
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -50070,6 +50306,11 @@ select {
   .sm\:hover\:from-pink-900:hover {
     --tw-gradient-from: #831843;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(131, 24, 67, 0));
+  }
+
+  .sm\:hover\:from-star-wars:hover {
+    --tw-gradient-from: #FFE300;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 227, 0, 0));
   }
 
   .sm\:focus\:from-transparent:focus {
@@ -50492,6 +50733,11 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(131, 24, 67, 0));
   }
 
+  .sm\:focus\:from-star-wars:focus {
+    --tw-gradient-from: #FFE300;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 227, 0, 0));
+  }
+
   .sm\:via-transparent {
     --tw-gradient-stops: var(--tw-gradient-from), transparent, var(--tw-gradient-to, rgba(0, 0, 0, 0));
   }
@@ -50826,6 +51072,10 @@ select {
 
   .sm\:via-pink-900 {
     --tw-gradient-stops: var(--tw-gradient-from), #831843, var(--tw-gradient-to, rgba(131, 24, 67, 0));
+  }
+
+  .sm\:via-star-wars {
+    --tw-gradient-stops: var(--tw-gradient-from), #FFE300, var(--tw-gradient-to, rgba(255, 227, 0, 0));
   }
 
   .sm\:hover\:via-transparent:hover {
@@ -51164,6 +51414,10 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), #831843, var(--tw-gradient-to, rgba(131, 24, 67, 0));
   }
 
+  .sm\:hover\:via-star-wars:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), #FFE300, var(--tw-gradient-to, rgba(255, 227, 0, 0));
+  }
+
   .sm\:focus\:via-transparent:focus {
     --tw-gradient-stops: var(--tw-gradient-from), transparent, var(--tw-gradient-to, rgba(0, 0, 0, 0));
   }
@@ -51498,6 +51752,10 @@ select {
 
   .sm\:focus\:via-pink-900:focus {
     --tw-gradient-stops: var(--tw-gradient-from), #831843, var(--tw-gradient-to, rgba(131, 24, 67, 0));
+  }
+
+  .sm\:focus\:via-star-wars:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), #FFE300, var(--tw-gradient-to, rgba(255, 227, 0, 0));
   }
 
   .sm\:to-transparent {
@@ -51836,6 +52094,10 @@ select {
     --tw-gradient-to: #831843;
   }
 
+  .sm\:to-star-wars {
+    --tw-gradient-to: #FFE300;
+  }
+
   .sm\:hover\:to-transparent:hover {
     --tw-gradient-to: transparent;
   }
@@ -52172,6 +52434,10 @@ select {
     --tw-gradient-to: #831843;
   }
 
+  .sm\:hover\:to-star-wars:hover {
+    --tw-gradient-to: #FFE300;
+  }
+
   .sm\:focus\:to-transparent:focus {
     --tw-gradient-to: transparent;
   }
@@ -52506,6 +52772,10 @@ select {
 
   .sm\:focus\:to-pink-900:focus {
     --tw-gradient-to: #831843;
+  }
+
+  .sm\:focus\:to-star-wars:focus {
+    --tw-gradient-to: #FFE300;
   }
 
   .sm\:decoration-slice {
@@ -54491,6 +54761,11 @@ select {
     color: rgba(131, 24, 67, var(--tw-text-opacity));
   }
 
+  .sm\:text-star-wars {
+    --tw-text-opacity: 1;
+    color: rgba(255, 227, 0, var(--tw-text-opacity));
+  }
+
   .group:hover .sm\:group-hover\:text-transparent {
     color: transparent;
   }
@@ -54907,6 +55182,11 @@ select {
   .group:hover .sm\:group-hover\:text-pink-900 {
     --tw-text-opacity: 1;
     color: rgba(131, 24, 67, var(--tw-text-opacity));
+  }
+
+  .group:hover .sm\:group-hover\:text-star-wars {
+    --tw-text-opacity: 1;
+    color: rgba(255, 227, 0, var(--tw-text-opacity));
   }
 
   .sm\:focus-within\:text-transparent:focus-within {
@@ -55327,6 +55607,11 @@ select {
     color: rgba(131, 24, 67, var(--tw-text-opacity));
   }
 
+  .sm\:focus-within\:text-star-wars:focus-within {
+    --tw-text-opacity: 1;
+    color: rgba(255, 227, 0, var(--tw-text-opacity));
+  }
+
   .sm\:hover\:text-transparent:hover {
     color: transparent;
   }
@@ -55745,6 +56030,11 @@ select {
     color: rgba(131, 24, 67, var(--tw-text-opacity));
   }
 
+  .sm\:hover\:text-star-wars:hover {
+    --tw-text-opacity: 1;
+    color: rgba(255, 227, 0, var(--tw-text-opacity));
+  }
+
   .sm\:focus\:text-transparent:focus {
     color: transparent;
   }
@@ -56161,6 +56451,11 @@ select {
   .sm\:focus\:text-pink-900:focus {
     --tw-text-opacity: 1;
     color: rgba(131, 24, 67, var(--tw-text-opacity));
+  }
+
+  .sm\:focus\:text-star-wars:focus {
+    --tw-text-opacity: 1;
+    color: rgba(255, 227, 0, var(--tw-text-opacity));
   }
 
   .sm\:text-opacity-0 {
@@ -57787,6 +58082,21 @@ select {
     color: rgba(131, 24, 67, var(--tw-placeholder-opacity));
   }
 
+  .sm\:placeholder-star-wars::-moz-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(255, 227, 0, var(--tw-placeholder-opacity));
+  }
+
+  .sm\:placeholder-star-wars:-ms-input-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(255, 227, 0, var(--tw-placeholder-opacity));
+  }
+
+  .sm\:placeholder-star-wars::placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(255, 227, 0, var(--tw-placeholder-opacity));
+  }
+
   .sm\:focus\:placeholder-transparent:focus::-moz-placeholder {
     color: transparent;
   }
@@ -59039,6 +59349,21 @@ select {
   .sm\:focus\:placeholder-pink-900:focus::placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(131, 24, 67, var(--tw-placeholder-opacity));
+  }
+
+  .sm\:focus\:placeholder-star-wars:focus::-moz-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(255, 227, 0, var(--tw-placeholder-opacity));
+  }
+
+  .sm\:focus\:placeholder-star-wars:focus:-ms-input-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(255, 227, 0, var(--tw-placeholder-opacity));
+  }
+
+  .sm\:focus\:placeholder-star-wars:focus::placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(255, 227, 0, var(--tw-placeholder-opacity));
   }
 
   .sm\:placeholder-opacity-0::-moz-placeholder {
@@ -60672,6 +60997,11 @@ select {
     --tw-ring-color: rgba(131, 24, 67, var(--tw-ring-opacity));
   }
 
+  .sm\:ring-star-wars {
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgba(255, 227, 0, var(--tw-ring-opacity));
+  }
+
   .sm\:focus-within\:ring-transparent:focus-within {
     --tw-ring-color: transparent;
   }
@@ -61090,6 +61420,11 @@ select {
     --tw-ring-color: rgba(131, 24, 67, var(--tw-ring-opacity));
   }
 
+  .sm\:focus-within\:ring-star-wars:focus-within {
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgba(255, 227, 0, var(--tw-ring-opacity));
+  }
+
   .sm\:focus\:ring-transparent:focus {
     --tw-ring-color: transparent;
   }
@@ -61506,6 +61841,11 @@ select {
   .sm\:focus\:ring-pink-900:focus {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(131, 24, 67, var(--tw-ring-opacity));
+  }
+
+  .sm\:focus\:ring-star-wars:focus {
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgba(255, 227, 0, var(--tw-ring-opacity));
   }
 
   .sm\:ring-opacity-0 {
@@ -62084,6 +62424,10 @@ select {
     --tw-ring-offset-color: #831843;
   }
 
+  .sm\:ring-offset-star-wars {
+    --tw-ring-offset-color: #FFE300;
+  }
+
   .sm\:focus-within\:ring-offset-transparent:focus-within {
     --tw-ring-offset-color: transparent;
   }
@@ -62420,6 +62764,10 @@ select {
     --tw-ring-offset-color: #831843;
   }
 
+  .sm\:focus-within\:ring-offset-star-wars:focus-within {
+    --tw-ring-offset-color: #FFE300;
+  }
+
   .sm\:focus\:ring-offset-transparent:focus {
     --tw-ring-offset-color: transparent;
   }
@@ -62754,6 +63102,10 @@ select {
 
   .sm\:focus\:ring-offset-pink-900:focus {
     --tw-ring-offset-color: #831843;
+  }
+
+  .sm\:focus\:ring-offset-star-wars:focus {
+    --tw-ring-offset-color: #FFE300;
   }
 
   .sm\:filter {
@@ -74905,6 +75257,11 @@ select {
     border-color: rgba(131, 24, 67, var(--tw-divide-opacity));
   }
 
+  .md\:divide-star-wars > :not([hidden]) ~ :not([hidden]) {
+    --tw-divide-opacity: 1;
+    border-color: rgba(255, 227, 0, var(--tw-divide-opacity));
+  }
+
   .md\:divide-opacity-0 > :not([hidden]) ~ :not([hidden]) {
     --tw-divide-opacity: 0;
   }
@@ -76057,6 +76414,11 @@ select {
     border-color: rgba(131, 24, 67, var(--tw-border-opacity));
   }
 
+  .md\:border-star-wars {
+    --tw-border-opacity: 1;
+    border-color: rgba(255, 227, 0, var(--tw-border-opacity));
+  }
+
   .group:hover .md\:group-hover\:border-transparent {
     border-color: transparent;
   }
@@ -76473,6 +76835,11 @@ select {
   .group:hover .md\:group-hover\:border-pink-900 {
     --tw-border-opacity: 1;
     border-color: rgba(131, 24, 67, var(--tw-border-opacity));
+  }
+
+  .group:hover .md\:group-hover\:border-star-wars {
+    --tw-border-opacity: 1;
+    border-color: rgba(255, 227, 0, var(--tw-border-opacity));
   }
 
   .md\:focus-within\:border-transparent:focus-within {
@@ -76893,6 +77260,11 @@ select {
     border-color: rgba(131, 24, 67, var(--tw-border-opacity));
   }
 
+  .md\:focus-within\:border-star-wars:focus-within {
+    --tw-border-opacity: 1;
+    border-color: rgba(255, 227, 0, var(--tw-border-opacity));
+  }
+
   .md\:hover\:border-transparent:hover {
     border-color: transparent;
   }
@@ -77311,6 +77683,11 @@ select {
     border-color: rgba(131, 24, 67, var(--tw-border-opacity));
   }
 
+  .md\:hover\:border-star-wars:hover {
+    --tw-border-opacity: 1;
+    border-color: rgba(255, 227, 0, var(--tw-border-opacity));
+  }
+
   .md\:focus\:border-transparent:focus {
     border-color: transparent;
   }
@@ -77727,6 +78104,11 @@ select {
   .md\:focus\:border-pink-900:focus {
     --tw-border-opacity: 1;
     border-color: rgba(131, 24, 67, var(--tw-border-opacity));
+  }
+
+  .md\:focus\:border-star-wars:focus {
+    --tw-border-opacity: 1;
+    border-color: rgba(255, 227, 0, var(--tw-border-opacity));
   }
 
   .md\:border-opacity-0 {
@@ -78447,6 +78829,11 @@ select {
     background-color: rgba(131, 24, 67, var(--tw-bg-opacity));
   }
 
+  .md\:bg-star-wars {
+    --tw-bg-opacity: 1;
+    background-color: rgba(255, 227, 0, var(--tw-bg-opacity));
+  }
+
   .group:hover .md\:group-hover\:bg-transparent {
     background-color: transparent;
   }
@@ -78863,6 +79250,11 @@ select {
   .group:hover .md\:group-hover\:bg-pink-900 {
     --tw-bg-opacity: 1;
     background-color: rgba(131, 24, 67, var(--tw-bg-opacity));
+  }
+
+  .group:hover .md\:group-hover\:bg-star-wars {
+    --tw-bg-opacity: 1;
+    background-color: rgba(255, 227, 0, var(--tw-bg-opacity));
   }
 
   .md\:focus-within\:bg-transparent:focus-within {
@@ -79283,6 +79675,11 @@ select {
     background-color: rgba(131, 24, 67, var(--tw-bg-opacity));
   }
 
+  .md\:focus-within\:bg-star-wars:focus-within {
+    --tw-bg-opacity: 1;
+    background-color: rgba(255, 227, 0, var(--tw-bg-opacity));
+  }
+
   .md\:hover\:bg-transparent:hover {
     background-color: transparent;
   }
@@ -79701,6 +80098,11 @@ select {
     background-color: rgba(131, 24, 67, var(--tw-bg-opacity));
   }
 
+  .md\:hover\:bg-star-wars:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgba(255, 227, 0, var(--tw-bg-opacity));
+  }
+
   .md\:focus\:bg-transparent:focus {
     background-color: transparent;
   }
@@ -80117,6 +80519,11 @@ select {
   .md\:focus\:bg-pink-900:focus {
     --tw-bg-opacity: 1;
     background-color: rgba(131, 24, 67, var(--tw-bg-opacity));
+  }
+
+  .md\:focus\:bg-star-wars:focus {
+    --tw-bg-opacity: 1;
+    background-color: rgba(255, 227, 0, var(--tw-bg-opacity));
   }
 
   .md\:bg-opacity-0 {
@@ -80875,6 +81282,11 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(131, 24, 67, 0));
   }
 
+  .md\:from-star-wars {
+    --tw-gradient-from: #FFE300;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 227, 0, 0));
+  }
+
   .md\:hover\:from-transparent:hover {
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -81293,6 +81705,11 @@ select {
   .md\:hover\:from-pink-900:hover {
     --tw-gradient-from: #831843;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(131, 24, 67, 0));
+  }
+
+  .md\:hover\:from-star-wars:hover {
+    --tw-gradient-from: #FFE300;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 227, 0, 0));
   }
 
   .md\:focus\:from-transparent:focus {
@@ -81715,6 +82132,11 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(131, 24, 67, 0));
   }
 
+  .md\:focus\:from-star-wars:focus {
+    --tw-gradient-from: #FFE300;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 227, 0, 0));
+  }
+
   .md\:via-transparent {
     --tw-gradient-stops: var(--tw-gradient-from), transparent, var(--tw-gradient-to, rgba(0, 0, 0, 0));
   }
@@ -82049,6 +82471,10 @@ select {
 
   .md\:via-pink-900 {
     --tw-gradient-stops: var(--tw-gradient-from), #831843, var(--tw-gradient-to, rgba(131, 24, 67, 0));
+  }
+
+  .md\:via-star-wars {
+    --tw-gradient-stops: var(--tw-gradient-from), #FFE300, var(--tw-gradient-to, rgba(255, 227, 0, 0));
   }
 
   .md\:hover\:via-transparent:hover {
@@ -82387,6 +82813,10 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), #831843, var(--tw-gradient-to, rgba(131, 24, 67, 0));
   }
 
+  .md\:hover\:via-star-wars:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), #FFE300, var(--tw-gradient-to, rgba(255, 227, 0, 0));
+  }
+
   .md\:focus\:via-transparent:focus {
     --tw-gradient-stops: var(--tw-gradient-from), transparent, var(--tw-gradient-to, rgba(0, 0, 0, 0));
   }
@@ -82721,6 +83151,10 @@ select {
 
   .md\:focus\:via-pink-900:focus {
     --tw-gradient-stops: var(--tw-gradient-from), #831843, var(--tw-gradient-to, rgba(131, 24, 67, 0));
+  }
+
+  .md\:focus\:via-star-wars:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), #FFE300, var(--tw-gradient-to, rgba(255, 227, 0, 0));
   }
 
   .md\:to-transparent {
@@ -83059,6 +83493,10 @@ select {
     --tw-gradient-to: #831843;
   }
 
+  .md\:to-star-wars {
+    --tw-gradient-to: #FFE300;
+  }
+
   .md\:hover\:to-transparent:hover {
     --tw-gradient-to: transparent;
   }
@@ -83395,6 +83833,10 @@ select {
     --tw-gradient-to: #831843;
   }
 
+  .md\:hover\:to-star-wars:hover {
+    --tw-gradient-to: #FFE300;
+  }
+
   .md\:focus\:to-transparent:focus {
     --tw-gradient-to: transparent;
   }
@@ -83729,6 +84171,10 @@ select {
 
   .md\:focus\:to-pink-900:focus {
     --tw-gradient-to: #831843;
+  }
+
+  .md\:focus\:to-star-wars:focus {
+    --tw-gradient-to: #FFE300;
   }
 
   .md\:decoration-slice {
@@ -85714,6 +86160,11 @@ select {
     color: rgba(131, 24, 67, var(--tw-text-opacity));
   }
 
+  .md\:text-star-wars {
+    --tw-text-opacity: 1;
+    color: rgba(255, 227, 0, var(--tw-text-opacity));
+  }
+
   .group:hover .md\:group-hover\:text-transparent {
     color: transparent;
   }
@@ -86130,6 +86581,11 @@ select {
   .group:hover .md\:group-hover\:text-pink-900 {
     --tw-text-opacity: 1;
     color: rgba(131, 24, 67, var(--tw-text-opacity));
+  }
+
+  .group:hover .md\:group-hover\:text-star-wars {
+    --tw-text-opacity: 1;
+    color: rgba(255, 227, 0, var(--tw-text-opacity));
   }
 
   .md\:focus-within\:text-transparent:focus-within {
@@ -86550,6 +87006,11 @@ select {
     color: rgba(131, 24, 67, var(--tw-text-opacity));
   }
 
+  .md\:focus-within\:text-star-wars:focus-within {
+    --tw-text-opacity: 1;
+    color: rgba(255, 227, 0, var(--tw-text-opacity));
+  }
+
   .md\:hover\:text-transparent:hover {
     color: transparent;
   }
@@ -86968,6 +87429,11 @@ select {
     color: rgba(131, 24, 67, var(--tw-text-opacity));
   }
 
+  .md\:hover\:text-star-wars:hover {
+    --tw-text-opacity: 1;
+    color: rgba(255, 227, 0, var(--tw-text-opacity));
+  }
+
   .md\:focus\:text-transparent:focus {
     color: transparent;
   }
@@ -87384,6 +87850,11 @@ select {
   .md\:focus\:text-pink-900:focus {
     --tw-text-opacity: 1;
     color: rgba(131, 24, 67, var(--tw-text-opacity));
+  }
+
+  .md\:focus\:text-star-wars:focus {
+    --tw-text-opacity: 1;
+    color: rgba(255, 227, 0, var(--tw-text-opacity));
   }
 
   .md\:text-opacity-0 {
@@ -89010,6 +89481,21 @@ select {
     color: rgba(131, 24, 67, var(--tw-placeholder-opacity));
   }
 
+  .md\:placeholder-star-wars::-moz-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(255, 227, 0, var(--tw-placeholder-opacity));
+  }
+
+  .md\:placeholder-star-wars:-ms-input-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(255, 227, 0, var(--tw-placeholder-opacity));
+  }
+
+  .md\:placeholder-star-wars::placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(255, 227, 0, var(--tw-placeholder-opacity));
+  }
+
   .md\:focus\:placeholder-transparent:focus::-moz-placeholder {
     color: transparent;
   }
@@ -90262,6 +90748,21 @@ select {
   .md\:focus\:placeholder-pink-900:focus::placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(131, 24, 67, var(--tw-placeholder-opacity));
+  }
+
+  .md\:focus\:placeholder-star-wars:focus::-moz-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(255, 227, 0, var(--tw-placeholder-opacity));
+  }
+
+  .md\:focus\:placeholder-star-wars:focus:-ms-input-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(255, 227, 0, var(--tw-placeholder-opacity));
+  }
+
+  .md\:focus\:placeholder-star-wars:focus::placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(255, 227, 0, var(--tw-placeholder-opacity));
   }
 
   .md\:placeholder-opacity-0::-moz-placeholder {
@@ -91895,6 +92396,11 @@ select {
     --tw-ring-color: rgba(131, 24, 67, var(--tw-ring-opacity));
   }
 
+  .md\:ring-star-wars {
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgba(255, 227, 0, var(--tw-ring-opacity));
+  }
+
   .md\:focus-within\:ring-transparent:focus-within {
     --tw-ring-color: transparent;
   }
@@ -92313,6 +92819,11 @@ select {
     --tw-ring-color: rgba(131, 24, 67, var(--tw-ring-opacity));
   }
 
+  .md\:focus-within\:ring-star-wars:focus-within {
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgba(255, 227, 0, var(--tw-ring-opacity));
+  }
+
   .md\:focus\:ring-transparent:focus {
     --tw-ring-color: transparent;
   }
@@ -92729,6 +93240,11 @@ select {
   .md\:focus\:ring-pink-900:focus {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(131, 24, 67, var(--tw-ring-opacity));
+  }
+
+  .md\:focus\:ring-star-wars:focus {
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgba(255, 227, 0, var(--tw-ring-opacity));
   }
 
   .md\:ring-opacity-0 {
@@ -93307,6 +93823,10 @@ select {
     --tw-ring-offset-color: #831843;
   }
 
+  .md\:ring-offset-star-wars {
+    --tw-ring-offset-color: #FFE300;
+  }
+
   .md\:focus-within\:ring-offset-transparent:focus-within {
     --tw-ring-offset-color: transparent;
   }
@@ -93643,6 +94163,10 @@ select {
     --tw-ring-offset-color: #831843;
   }
 
+  .md\:focus-within\:ring-offset-star-wars:focus-within {
+    --tw-ring-offset-color: #FFE300;
+  }
+
   .md\:focus\:ring-offset-transparent:focus {
     --tw-ring-offset-color: transparent;
   }
@@ -93977,6 +94501,10 @@ select {
 
   .md\:focus\:ring-offset-pink-900:focus {
     --tw-ring-offset-color: #831843;
+  }
+
+  .md\:focus\:ring-offset-star-wars:focus {
+    --tw-ring-offset-color: #FFE300;
   }
 
   .md\:filter {
@@ -106128,6 +106656,11 @@ select {
     border-color: rgba(131, 24, 67, var(--tw-divide-opacity));
   }
 
+  .lg\:divide-star-wars > :not([hidden]) ~ :not([hidden]) {
+    --tw-divide-opacity: 1;
+    border-color: rgba(255, 227, 0, var(--tw-divide-opacity));
+  }
+
   .lg\:divide-opacity-0 > :not([hidden]) ~ :not([hidden]) {
     --tw-divide-opacity: 0;
   }
@@ -107280,6 +107813,11 @@ select {
     border-color: rgba(131, 24, 67, var(--tw-border-opacity));
   }
 
+  .lg\:border-star-wars {
+    --tw-border-opacity: 1;
+    border-color: rgba(255, 227, 0, var(--tw-border-opacity));
+  }
+
   .group:hover .lg\:group-hover\:border-transparent {
     border-color: transparent;
   }
@@ -107696,6 +108234,11 @@ select {
   .group:hover .lg\:group-hover\:border-pink-900 {
     --tw-border-opacity: 1;
     border-color: rgba(131, 24, 67, var(--tw-border-opacity));
+  }
+
+  .group:hover .lg\:group-hover\:border-star-wars {
+    --tw-border-opacity: 1;
+    border-color: rgba(255, 227, 0, var(--tw-border-opacity));
   }
 
   .lg\:focus-within\:border-transparent:focus-within {
@@ -108116,6 +108659,11 @@ select {
     border-color: rgba(131, 24, 67, var(--tw-border-opacity));
   }
 
+  .lg\:focus-within\:border-star-wars:focus-within {
+    --tw-border-opacity: 1;
+    border-color: rgba(255, 227, 0, var(--tw-border-opacity));
+  }
+
   .lg\:hover\:border-transparent:hover {
     border-color: transparent;
   }
@@ -108534,6 +109082,11 @@ select {
     border-color: rgba(131, 24, 67, var(--tw-border-opacity));
   }
 
+  .lg\:hover\:border-star-wars:hover {
+    --tw-border-opacity: 1;
+    border-color: rgba(255, 227, 0, var(--tw-border-opacity));
+  }
+
   .lg\:focus\:border-transparent:focus {
     border-color: transparent;
   }
@@ -108950,6 +109503,11 @@ select {
   .lg\:focus\:border-pink-900:focus {
     --tw-border-opacity: 1;
     border-color: rgba(131, 24, 67, var(--tw-border-opacity));
+  }
+
+  .lg\:focus\:border-star-wars:focus {
+    --tw-border-opacity: 1;
+    border-color: rgba(255, 227, 0, var(--tw-border-opacity));
   }
 
   .lg\:border-opacity-0 {
@@ -109670,6 +110228,11 @@ select {
     background-color: rgba(131, 24, 67, var(--tw-bg-opacity));
   }
 
+  .lg\:bg-star-wars {
+    --tw-bg-opacity: 1;
+    background-color: rgba(255, 227, 0, var(--tw-bg-opacity));
+  }
+
   .group:hover .lg\:group-hover\:bg-transparent {
     background-color: transparent;
   }
@@ -110086,6 +110649,11 @@ select {
   .group:hover .lg\:group-hover\:bg-pink-900 {
     --tw-bg-opacity: 1;
     background-color: rgba(131, 24, 67, var(--tw-bg-opacity));
+  }
+
+  .group:hover .lg\:group-hover\:bg-star-wars {
+    --tw-bg-opacity: 1;
+    background-color: rgba(255, 227, 0, var(--tw-bg-opacity));
   }
 
   .lg\:focus-within\:bg-transparent:focus-within {
@@ -110506,6 +111074,11 @@ select {
     background-color: rgba(131, 24, 67, var(--tw-bg-opacity));
   }
 
+  .lg\:focus-within\:bg-star-wars:focus-within {
+    --tw-bg-opacity: 1;
+    background-color: rgba(255, 227, 0, var(--tw-bg-opacity));
+  }
+
   .lg\:hover\:bg-transparent:hover {
     background-color: transparent;
   }
@@ -110924,6 +111497,11 @@ select {
     background-color: rgba(131, 24, 67, var(--tw-bg-opacity));
   }
 
+  .lg\:hover\:bg-star-wars:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgba(255, 227, 0, var(--tw-bg-opacity));
+  }
+
   .lg\:focus\:bg-transparent:focus {
     background-color: transparent;
   }
@@ -111340,6 +111918,11 @@ select {
   .lg\:focus\:bg-pink-900:focus {
     --tw-bg-opacity: 1;
     background-color: rgba(131, 24, 67, var(--tw-bg-opacity));
+  }
+
+  .lg\:focus\:bg-star-wars:focus {
+    --tw-bg-opacity: 1;
+    background-color: rgba(255, 227, 0, var(--tw-bg-opacity));
   }
 
   .lg\:bg-opacity-0 {
@@ -112098,6 +112681,11 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(131, 24, 67, 0));
   }
 
+  .lg\:from-star-wars {
+    --tw-gradient-from: #FFE300;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 227, 0, 0));
+  }
+
   .lg\:hover\:from-transparent:hover {
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -112516,6 +113104,11 @@ select {
   .lg\:hover\:from-pink-900:hover {
     --tw-gradient-from: #831843;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(131, 24, 67, 0));
+  }
+
+  .lg\:hover\:from-star-wars:hover {
+    --tw-gradient-from: #FFE300;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 227, 0, 0));
   }
 
   .lg\:focus\:from-transparent:focus {
@@ -112938,6 +113531,11 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(131, 24, 67, 0));
   }
 
+  .lg\:focus\:from-star-wars:focus {
+    --tw-gradient-from: #FFE300;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 227, 0, 0));
+  }
+
   .lg\:via-transparent {
     --tw-gradient-stops: var(--tw-gradient-from), transparent, var(--tw-gradient-to, rgba(0, 0, 0, 0));
   }
@@ -113272,6 +113870,10 @@ select {
 
   .lg\:via-pink-900 {
     --tw-gradient-stops: var(--tw-gradient-from), #831843, var(--tw-gradient-to, rgba(131, 24, 67, 0));
+  }
+
+  .lg\:via-star-wars {
+    --tw-gradient-stops: var(--tw-gradient-from), #FFE300, var(--tw-gradient-to, rgba(255, 227, 0, 0));
   }
 
   .lg\:hover\:via-transparent:hover {
@@ -113610,6 +114212,10 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), #831843, var(--tw-gradient-to, rgba(131, 24, 67, 0));
   }
 
+  .lg\:hover\:via-star-wars:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), #FFE300, var(--tw-gradient-to, rgba(255, 227, 0, 0));
+  }
+
   .lg\:focus\:via-transparent:focus {
     --tw-gradient-stops: var(--tw-gradient-from), transparent, var(--tw-gradient-to, rgba(0, 0, 0, 0));
   }
@@ -113944,6 +114550,10 @@ select {
 
   .lg\:focus\:via-pink-900:focus {
     --tw-gradient-stops: var(--tw-gradient-from), #831843, var(--tw-gradient-to, rgba(131, 24, 67, 0));
+  }
+
+  .lg\:focus\:via-star-wars:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), #FFE300, var(--tw-gradient-to, rgba(255, 227, 0, 0));
   }
 
   .lg\:to-transparent {
@@ -114282,6 +114892,10 @@ select {
     --tw-gradient-to: #831843;
   }
 
+  .lg\:to-star-wars {
+    --tw-gradient-to: #FFE300;
+  }
+
   .lg\:hover\:to-transparent:hover {
     --tw-gradient-to: transparent;
   }
@@ -114618,6 +115232,10 @@ select {
     --tw-gradient-to: #831843;
   }
 
+  .lg\:hover\:to-star-wars:hover {
+    --tw-gradient-to: #FFE300;
+  }
+
   .lg\:focus\:to-transparent:focus {
     --tw-gradient-to: transparent;
   }
@@ -114952,6 +115570,10 @@ select {
 
   .lg\:focus\:to-pink-900:focus {
     --tw-gradient-to: #831843;
+  }
+
+  .lg\:focus\:to-star-wars:focus {
+    --tw-gradient-to: #FFE300;
   }
 
   .lg\:decoration-slice {
@@ -116937,6 +117559,11 @@ select {
     color: rgba(131, 24, 67, var(--tw-text-opacity));
   }
 
+  .lg\:text-star-wars {
+    --tw-text-opacity: 1;
+    color: rgba(255, 227, 0, var(--tw-text-opacity));
+  }
+
   .group:hover .lg\:group-hover\:text-transparent {
     color: transparent;
   }
@@ -117353,6 +117980,11 @@ select {
   .group:hover .lg\:group-hover\:text-pink-900 {
     --tw-text-opacity: 1;
     color: rgba(131, 24, 67, var(--tw-text-opacity));
+  }
+
+  .group:hover .lg\:group-hover\:text-star-wars {
+    --tw-text-opacity: 1;
+    color: rgba(255, 227, 0, var(--tw-text-opacity));
   }
 
   .lg\:focus-within\:text-transparent:focus-within {
@@ -117773,6 +118405,11 @@ select {
     color: rgba(131, 24, 67, var(--tw-text-opacity));
   }
 
+  .lg\:focus-within\:text-star-wars:focus-within {
+    --tw-text-opacity: 1;
+    color: rgba(255, 227, 0, var(--tw-text-opacity));
+  }
+
   .lg\:hover\:text-transparent:hover {
     color: transparent;
   }
@@ -118191,6 +118828,11 @@ select {
     color: rgba(131, 24, 67, var(--tw-text-opacity));
   }
 
+  .lg\:hover\:text-star-wars:hover {
+    --tw-text-opacity: 1;
+    color: rgba(255, 227, 0, var(--tw-text-opacity));
+  }
+
   .lg\:focus\:text-transparent:focus {
     color: transparent;
   }
@@ -118607,6 +119249,11 @@ select {
   .lg\:focus\:text-pink-900:focus {
     --tw-text-opacity: 1;
     color: rgba(131, 24, 67, var(--tw-text-opacity));
+  }
+
+  .lg\:focus\:text-star-wars:focus {
+    --tw-text-opacity: 1;
+    color: rgba(255, 227, 0, var(--tw-text-opacity));
   }
 
   .lg\:text-opacity-0 {
@@ -120233,6 +120880,21 @@ select {
     color: rgba(131, 24, 67, var(--tw-placeholder-opacity));
   }
 
+  .lg\:placeholder-star-wars::-moz-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(255, 227, 0, var(--tw-placeholder-opacity));
+  }
+
+  .lg\:placeholder-star-wars:-ms-input-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(255, 227, 0, var(--tw-placeholder-opacity));
+  }
+
+  .lg\:placeholder-star-wars::placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(255, 227, 0, var(--tw-placeholder-opacity));
+  }
+
   .lg\:focus\:placeholder-transparent:focus::-moz-placeholder {
     color: transparent;
   }
@@ -121485,6 +122147,21 @@ select {
   .lg\:focus\:placeholder-pink-900:focus::placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(131, 24, 67, var(--tw-placeholder-opacity));
+  }
+
+  .lg\:focus\:placeholder-star-wars:focus::-moz-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(255, 227, 0, var(--tw-placeholder-opacity));
+  }
+
+  .lg\:focus\:placeholder-star-wars:focus:-ms-input-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(255, 227, 0, var(--tw-placeholder-opacity));
+  }
+
+  .lg\:focus\:placeholder-star-wars:focus::placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(255, 227, 0, var(--tw-placeholder-opacity));
   }
 
   .lg\:placeholder-opacity-0::-moz-placeholder {
@@ -123118,6 +123795,11 @@ select {
     --tw-ring-color: rgba(131, 24, 67, var(--tw-ring-opacity));
   }
 
+  .lg\:ring-star-wars {
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgba(255, 227, 0, var(--tw-ring-opacity));
+  }
+
   .lg\:focus-within\:ring-transparent:focus-within {
     --tw-ring-color: transparent;
   }
@@ -123536,6 +124218,11 @@ select {
     --tw-ring-color: rgba(131, 24, 67, var(--tw-ring-opacity));
   }
 
+  .lg\:focus-within\:ring-star-wars:focus-within {
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgba(255, 227, 0, var(--tw-ring-opacity));
+  }
+
   .lg\:focus\:ring-transparent:focus {
     --tw-ring-color: transparent;
   }
@@ -123952,6 +124639,11 @@ select {
   .lg\:focus\:ring-pink-900:focus {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(131, 24, 67, var(--tw-ring-opacity));
+  }
+
+  .lg\:focus\:ring-star-wars:focus {
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgba(255, 227, 0, var(--tw-ring-opacity));
   }
 
   .lg\:ring-opacity-0 {
@@ -124530,6 +125222,10 @@ select {
     --tw-ring-offset-color: #831843;
   }
 
+  .lg\:ring-offset-star-wars {
+    --tw-ring-offset-color: #FFE300;
+  }
+
   .lg\:focus-within\:ring-offset-transparent:focus-within {
     --tw-ring-offset-color: transparent;
   }
@@ -124866,6 +125562,10 @@ select {
     --tw-ring-offset-color: #831843;
   }
 
+  .lg\:focus-within\:ring-offset-star-wars:focus-within {
+    --tw-ring-offset-color: #FFE300;
+  }
+
   .lg\:focus\:ring-offset-transparent:focus {
     --tw-ring-offset-color: transparent;
   }
@@ -125200,6 +125900,10 @@ select {
 
   .lg\:focus\:ring-offset-pink-900:focus {
     --tw-ring-offset-color: #831843;
+  }
+
+  .lg\:focus\:ring-offset-star-wars:focus {
+    --tw-ring-offset-color: #FFE300;
   }
 
   .lg\:filter {
@@ -137351,6 +138055,11 @@ select {
     border-color: rgba(131, 24, 67, var(--tw-divide-opacity));
   }
 
+  .xl\:divide-star-wars > :not([hidden]) ~ :not([hidden]) {
+    --tw-divide-opacity: 1;
+    border-color: rgba(255, 227, 0, var(--tw-divide-opacity));
+  }
+
   .xl\:divide-opacity-0 > :not([hidden]) ~ :not([hidden]) {
     --tw-divide-opacity: 0;
   }
@@ -138503,6 +139212,11 @@ select {
     border-color: rgba(131, 24, 67, var(--tw-border-opacity));
   }
 
+  .xl\:border-star-wars {
+    --tw-border-opacity: 1;
+    border-color: rgba(255, 227, 0, var(--tw-border-opacity));
+  }
+
   .group:hover .xl\:group-hover\:border-transparent {
     border-color: transparent;
   }
@@ -138919,6 +139633,11 @@ select {
   .group:hover .xl\:group-hover\:border-pink-900 {
     --tw-border-opacity: 1;
     border-color: rgba(131, 24, 67, var(--tw-border-opacity));
+  }
+
+  .group:hover .xl\:group-hover\:border-star-wars {
+    --tw-border-opacity: 1;
+    border-color: rgba(255, 227, 0, var(--tw-border-opacity));
   }
 
   .xl\:focus-within\:border-transparent:focus-within {
@@ -139339,6 +140058,11 @@ select {
     border-color: rgba(131, 24, 67, var(--tw-border-opacity));
   }
 
+  .xl\:focus-within\:border-star-wars:focus-within {
+    --tw-border-opacity: 1;
+    border-color: rgba(255, 227, 0, var(--tw-border-opacity));
+  }
+
   .xl\:hover\:border-transparent:hover {
     border-color: transparent;
   }
@@ -139757,6 +140481,11 @@ select {
     border-color: rgba(131, 24, 67, var(--tw-border-opacity));
   }
 
+  .xl\:hover\:border-star-wars:hover {
+    --tw-border-opacity: 1;
+    border-color: rgba(255, 227, 0, var(--tw-border-opacity));
+  }
+
   .xl\:focus\:border-transparent:focus {
     border-color: transparent;
   }
@@ -140173,6 +140902,11 @@ select {
   .xl\:focus\:border-pink-900:focus {
     --tw-border-opacity: 1;
     border-color: rgba(131, 24, 67, var(--tw-border-opacity));
+  }
+
+  .xl\:focus\:border-star-wars:focus {
+    --tw-border-opacity: 1;
+    border-color: rgba(255, 227, 0, var(--tw-border-opacity));
   }
 
   .xl\:border-opacity-0 {
@@ -140893,6 +141627,11 @@ select {
     background-color: rgba(131, 24, 67, var(--tw-bg-opacity));
   }
 
+  .xl\:bg-star-wars {
+    --tw-bg-opacity: 1;
+    background-color: rgba(255, 227, 0, var(--tw-bg-opacity));
+  }
+
   .group:hover .xl\:group-hover\:bg-transparent {
     background-color: transparent;
   }
@@ -141309,6 +142048,11 @@ select {
   .group:hover .xl\:group-hover\:bg-pink-900 {
     --tw-bg-opacity: 1;
     background-color: rgba(131, 24, 67, var(--tw-bg-opacity));
+  }
+
+  .group:hover .xl\:group-hover\:bg-star-wars {
+    --tw-bg-opacity: 1;
+    background-color: rgba(255, 227, 0, var(--tw-bg-opacity));
   }
 
   .xl\:focus-within\:bg-transparent:focus-within {
@@ -141729,6 +142473,11 @@ select {
     background-color: rgba(131, 24, 67, var(--tw-bg-opacity));
   }
 
+  .xl\:focus-within\:bg-star-wars:focus-within {
+    --tw-bg-opacity: 1;
+    background-color: rgba(255, 227, 0, var(--tw-bg-opacity));
+  }
+
   .xl\:hover\:bg-transparent:hover {
     background-color: transparent;
   }
@@ -142147,6 +142896,11 @@ select {
     background-color: rgba(131, 24, 67, var(--tw-bg-opacity));
   }
 
+  .xl\:hover\:bg-star-wars:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgba(255, 227, 0, var(--tw-bg-opacity));
+  }
+
   .xl\:focus\:bg-transparent:focus {
     background-color: transparent;
   }
@@ -142563,6 +143317,11 @@ select {
   .xl\:focus\:bg-pink-900:focus {
     --tw-bg-opacity: 1;
     background-color: rgba(131, 24, 67, var(--tw-bg-opacity));
+  }
+
+  .xl\:focus\:bg-star-wars:focus {
+    --tw-bg-opacity: 1;
+    background-color: rgba(255, 227, 0, var(--tw-bg-opacity));
   }
 
   .xl\:bg-opacity-0 {
@@ -143321,6 +144080,11 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(131, 24, 67, 0));
   }
 
+  .xl\:from-star-wars {
+    --tw-gradient-from: #FFE300;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 227, 0, 0));
+  }
+
   .xl\:hover\:from-transparent:hover {
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -143739,6 +144503,11 @@ select {
   .xl\:hover\:from-pink-900:hover {
     --tw-gradient-from: #831843;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(131, 24, 67, 0));
+  }
+
+  .xl\:hover\:from-star-wars:hover {
+    --tw-gradient-from: #FFE300;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 227, 0, 0));
   }
 
   .xl\:focus\:from-transparent:focus {
@@ -144161,6 +144930,11 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(131, 24, 67, 0));
   }
 
+  .xl\:focus\:from-star-wars:focus {
+    --tw-gradient-from: #FFE300;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 227, 0, 0));
+  }
+
   .xl\:via-transparent {
     --tw-gradient-stops: var(--tw-gradient-from), transparent, var(--tw-gradient-to, rgba(0, 0, 0, 0));
   }
@@ -144495,6 +145269,10 @@ select {
 
   .xl\:via-pink-900 {
     --tw-gradient-stops: var(--tw-gradient-from), #831843, var(--tw-gradient-to, rgba(131, 24, 67, 0));
+  }
+
+  .xl\:via-star-wars {
+    --tw-gradient-stops: var(--tw-gradient-from), #FFE300, var(--tw-gradient-to, rgba(255, 227, 0, 0));
   }
 
   .xl\:hover\:via-transparent:hover {
@@ -144833,6 +145611,10 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), #831843, var(--tw-gradient-to, rgba(131, 24, 67, 0));
   }
 
+  .xl\:hover\:via-star-wars:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), #FFE300, var(--tw-gradient-to, rgba(255, 227, 0, 0));
+  }
+
   .xl\:focus\:via-transparent:focus {
     --tw-gradient-stops: var(--tw-gradient-from), transparent, var(--tw-gradient-to, rgba(0, 0, 0, 0));
   }
@@ -145167,6 +145949,10 @@ select {
 
   .xl\:focus\:via-pink-900:focus {
     --tw-gradient-stops: var(--tw-gradient-from), #831843, var(--tw-gradient-to, rgba(131, 24, 67, 0));
+  }
+
+  .xl\:focus\:via-star-wars:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), #FFE300, var(--tw-gradient-to, rgba(255, 227, 0, 0));
   }
 
   .xl\:to-transparent {
@@ -145505,6 +146291,10 @@ select {
     --tw-gradient-to: #831843;
   }
 
+  .xl\:to-star-wars {
+    --tw-gradient-to: #FFE300;
+  }
+
   .xl\:hover\:to-transparent:hover {
     --tw-gradient-to: transparent;
   }
@@ -145841,6 +146631,10 @@ select {
     --tw-gradient-to: #831843;
   }
 
+  .xl\:hover\:to-star-wars:hover {
+    --tw-gradient-to: #FFE300;
+  }
+
   .xl\:focus\:to-transparent:focus {
     --tw-gradient-to: transparent;
   }
@@ -146175,6 +146969,10 @@ select {
 
   .xl\:focus\:to-pink-900:focus {
     --tw-gradient-to: #831843;
+  }
+
+  .xl\:focus\:to-star-wars:focus {
+    --tw-gradient-to: #FFE300;
   }
 
   .xl\:decoration-slice {
@@ -148160,6 +148958,11 @@ select {
     color: rgba(131, 24, 67, var(--tw-text-opacity));
   }
 
+  .xl\:text-star-wars {
+    --tw-text-opacity: 1;
+    color: rgba(255, 227, 0, var(--tw-text-opacity));
+  }
+
   .group:hover .xl\:group-hover\:text-transparent {
     color: transparent;
   }
@@ -148576,6 +149379,11 @@ select {
   .group:hover .xl\:group-hover\:text-pink-900 {
     --tw-text-opacity: 1;
     color: rgba(131, 24, 67, var(--tw-text-opacity));
+  }
+
+  .group:hover .xl\:group-hover\:text-star-wars {
+    --tw-text-opacity: 1;
+    color: rgba(255, 227, 0, var(--tw-text-opacity));
   }
 
   .xl\:focus-within\:text-transparent:focus-within {
@@ -148996,6 +149804,11 @@ select {
     color: rgba(131, 24, 67, var(--tw-text-opacity));
   }
 
+  .xl\:focus-within\:text-star-wars:focus-within {
+    --tw-text-opacity: 1;
+    color: rgba(255, 227, 0, var(--tw-text-opacity));
+  }
+
   .xl\:hover\:text-transparent:hover {
     color: transparent;
   }
@@ -149414,6 +150227,11 @@ select {
     color: rgba(131, 24, 67, var(--tw-text-opacity));
   }
 
+  .xl\:hover\:text-star-wars:hover {
+    --tw-text-opacity: 1;
+    color: rgba(255, 227, 0, var(--tw-text-opacity));
+  }
+
   .xl\:focus\:text-transparent:focus {
     color: transparent;
   }
@@ -149830,6 +150648,11 @@ select {
   .xl\:focus\:text-pink-900:focus {
     --tw-text-opacity: 1;
     color: rgba(131, 24, 67, var(--tw-text-opacity));
+  }
+
+  .xl\:focus\:text-star-wars:focus {
+    --tw-text-opacity: 1;
+    color: rgba(255, 227, 0, var(--tw-text-opacity));
   }
 
   .xl\:text-opacity-0 {
@@ -151456,6 +152279,21 @@ select {
     color: rgba(131, 24, 67, var(--tw-placeholder-opacity));
   }
 
+  .xl\:placeholder-star-wars::-moz-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(255, 227, 0, var(--tw-placeholder-opacity));
+  }
+
+  .xl\:placeholder-star-wars:-ms-input-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(255, 227, 0, var(--tw-placeholder-opacity));
+  }
+
+  .xl\:placeholder-star-wars::placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(255, 227, 0, var(--tw-placeholder-opacity));
+  }
+
   .xl\:focus\:placeholder-transparent:focus::-moz-placeholder {
     color: transparent;
   }
@@ -152708,6 +153546,21 @@ select {
   .xl\:focus\:placeholder-pink-900:focus::placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(131, 24, 67, var(--tw-placeholder-opacity));
+  }
+
+  .xl\:focus\:placeholder-star-wars:focus::-moz-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(255, 227, 0, var(--tw-placeholder-opacity));
+  }
+
+  .xl\:focus\:placeholder-star-wars:focus:-ms-input-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(255, 227, 0, var(--tw-placeholder-opacity));
+  }
+
+  .xl\:focus\:placeholder-star-wars:focus::placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(255, 227, 0, var(--tw-placeholder-opacity));
   }
 
   .xl\:placeholder-opacity-0::-moz-placeholder {
@@ -154341,6 +155194,11 @@ select {
     --tw-ring-color: rgba(131, 24, 67, var(--tw-ring-opacity));
   }
 
+  .xl\:ring-star-wars {
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgba(255, 227, 0, var(--tw-ring-opacity));
+  }
+
   .xl\:focus-within\:ring-transparent:focus-within {
     --tw-ring-color: transparent;
   }
@@ -154759,6 +155617,11 @@ select {
     --tw-ring-color: rgba(131, 24, 67, var(--tw-ring-opacity));
   }
 
+  .xl\:focus-within\:ring-star-wars:focus-within {
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgba(255, 227, 0, var(--tw-ring-opacity));
+  }
+
   .xl\:focus\:ring-transparent:focus {
     --tw-ring-color: transparent;
   }
@@ -155175,6 +156038,11 @@ select {
   .xl\:focus\:ring-pink-900:focus {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(131, 24, 67, var(--tw-ring-opacity));
+  }
+
+  .xl\:focus\:ring-star-wars:focus {
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgba(255, 227, 0, var(--tw-ring-opacity));
   }
 
   .xl\:ring-opacity-0 {
@@ -155753,6 +156621,10 @@ select {
     --tw-ring-offset-color: #831843;
   }
 
+  .xl\:ring-offset-star-wars {
+    --tw-ring-offset-color: #FFE300;
+  }
+
   .xl\:focus-within\:ring-offset-transparent:focus-within {
     --tw-ring-offset-color: transparent;
   }
@@ -156089,6 +156961,10 @@ select {
     --tw-ring-offset-color: #831843;
   }
 
+  .xl\:focus-within\:ring-offset-star-wars:focus-within {
+    --tw-ring-offset-color: #FFE300;
+  }
+
   .xl\:focus\:ring-offset-transparent:focus {
     --tw-ring-offset-color: transparent;
   }
@@ -156423,6 +157299,10 @@ select {
 
   .xl\:focus\:ring-offset-pink-900:focus {
     --tw-ring-offset-color: #831843;
+  }
+
+  .xl\:focus\:ring-offset-star-wars:focus {
+    --tw-ring-offset-color: #FFE300;
   }
 
   .xl\:filter {
@@ -168574,6 +169454,11 @@ select {
     border-color: rgba(131, 24, 67, var(--tw-divide-opacity));
   }
 
+  .\32xl\:divide-star-wars > :not([hidden]) ~ :not([hidden]) {
+    --tw-divide-opacity: 1;
+    border-color: rgba(255, 227, 0, var(--tw-divide-opacity));
+  }
+
   .\32xl\:divide-opacity-0 > :not([hidden]) ~ :not([hidden]) {
     --tw-divide-opacity: 0;
   }
@@ -169726,6 +170611,11 @@ select {
     border-color: rgba(131, 24, 67, var(--tw-border-opacity));
   }
 
+  .\32xl\:border-star-wars {
+    --tw-border-opacity: 1;
+    border-color: rgba(255, 227, 0, var(--tw-border-opacity));
+  }
+
   .group:hover .\32xl\:group-hover\:border-transparent {
     border-color: transparent;
   }
@@ -170142,6 +171032,11 @@ select {
   .group:hover .\32xl\:group-hover\:border-pink-900 {
     --tw-border-opacity: 1;
     border-color: rgba(131, 24, 67, var(--tw-border-opacity));
+  }
+
+  .group:hover .\32xl\:group-hover\:border-star-wars {
+    --tw-border-opacity: 1;
+    border-color: rgba(255, 227, 0, var(--tw-border-opacity));
   }
 
   .\32xl\:focus-within\:border-transparent:focus-within {
@@ -170562,6 +171457,11 @@ select {
     border-color: rgba(131, 24, 67, var(--tw-border-opacity));
   }
 
+  .\32xl\:focus-within\:border-star-wars:focus-within {
+    --tw-border-opacity: 1;
+    border-color: rgba(255, 227, 0, var(--tw-border-opacity));
+  }
+
   .\32xl\:hover\:border-transparent:hover {
     border-color: transparent;
   }
@@ -170980,6 +171880,11 @@ select {
     border-color: rgba(131, 24, 67, var(--tw-border-opacity));
   }
 
+  .\32xl\:hover\:border-star-wars:hover {
+    --tw-border-opacity: 1;
+    border-color: rgba(255, 227, 0, var(--tw-border-opacity));
+  }
+
   .\32xl\:focus\:border-transparent:focus {
     border-color: transparent;
   }
@@ -171396,6 +172301,11 @@ select {
   .\32xl\:focus\:border-pink-900:focus {
     --tw-border-opacity: 1;
     border-color: rgba(131, 24, 67, var(--tw-border-opacity));
+  }
+
+  .\32xl\:focus\:border-star-wars:focus {
+    --tw-border-opacity: 1;
+    border-color: rgba(255, 227, 0, var(--tw-border-opacity));
   }
 
   .\32xl\:border-opacity-0 {
@@ -172116,6 +173026,11 @@ select {
     background-color: rgba(131, 24, 67, var(--tw-bg-opacity));
   }
 
+  .\32xl\:bg-star-wars {
+    --tw-bg-opacity: 1;
+    background-color: rgba(255, 227, 0, var(--tw-bg-opacity));
+  }
+
   .group:hover .\32xl\:group-hover\:bg-transparent {
     background-color: transparent;
   }
@@ -172532,6 +173447,11 @@ select {
   .group:hover .\32xl\:group-hover\:bg-pink-900 {
     --tw-bg-opacity: 1;
     background-color: rgba(131, 24, 67, var(--tw-bg-opacity));
+  }
+
+  .group:hover .\32xl\:group-hover\:bg-star-wars {
+    --tw-bg-opacity: 1;
+    background-color: rgba(255, 227, 0, var(--tw-bg-opacity));
   }
 
   .\32xl\:focus-within\:bg-transparent:focus-within {
@@ -172952,6 +173872,11 @@ select {
     background-color: rgba(131, 24, 67, var(--tw-bg-opacity));
   }
 
+  .\32xl\:focus-within\:bg-star-wars:focus-within {
+    --tw-bg-opacity: 1;
+    background-color: rgba(255, 227, 0, var(--tw-bg-opacity));
+  }
+
   .\32xl\:hover\:bg-transparent:hover {
     background-color: transparent;
   }
@@ -173370,6 +174295,11 @@ select {
     background-color: rgba(131, 24, 67, var(--tw-bg-opacity));
   }
 
+  .\32xl\:hover\:bg-star-wars:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgba(255, 227, 0, var(--tw-bg-opacity));
+  }
+
   .\32xl\:focus\:bg-transparent:focus {
     background-color: transparent;
   }
@@ -173786,6 +174716,11 @@ select {
   .\32xl\:focus\:bg-pink-900:focus {
     --tw-bg-opacity: 1;
     background-color: rgba(131, 24, 67, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:focus\:bg-star-wars:focus {
+    --tw-bg-opacity: 1;
+    background-color: rgba(255, 227, 0, var(--tw-bg-opacity));
   }
 
   .\32xl\:bg-opacity-0 {
@@ -174544,6 +175479,11 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(131, 24, 67, 0));
   }
 
+  .\32xl\:from-star-wars {
+    --tw-gradient-from: #FFE300;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 227, 0, 0));
+  }
+
   .\32xl\:hover\:from-transparent:hover {
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -174962,6 +175902,11 @@ select {
   .\32xl\:hover\:from-pink-900:hover {
     --tw-gradient-from: #831843;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(131, 24, 67, 0));
+  }
+
+  .\32xl\:hover\:from-star-wars:hover {
+    --tw-gradient-from: #FFE300;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 227, 0, 0));
   }
 
   .\32xl\:focus\:from-transparent:focus {
@@ -175384,6 +176329,11 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(131, 24, 67, 0));
   }
 
+  .\32xl\:focus\:from-star-wars:focus {
+    --tw-gradient-from: #FFE300;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 227, 0, 0));
+  }
+
   .\32xl\:via-transparent {
     --tw-gradient-stops: var(--tw-gradient-from), transparent, var(--tw-gradient-to, rgba(0, 0, 0, 0));
   }
@@ -175718,6 +176668,10 @@ select {
 
   .\32xl\:via-pink-900 {
     --tw-gradient-stops: var(--tw-gradient-from), #831843, var(--tw-gradient-to, rgba(131, 24, 67, 0));
+  }
+
+  .\32xl\:via-star-wars {
+    --tw-gradient-stops: var(--tw-gradient-from), #FFE300, var(--tw-gradient-to, rgba(255, 227, 0, 0));
   }
 
   .\32xl\:hover\:via-transparent:hover {
@@ -176056,6 +177010,10 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), #831843, var(--tw-gradient-to, rgba(131, 24, 67, 0));
   }
 
+  .\32xl\:hover\:via-star-wars:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), #FFE300, var(--tw-gradient-to, rgba(255, 227, 0, 0));
+  }
+
   .\32xl\:focus\:via-transparent:focus {
     --tw-gradient-stops: var(--tw-gradient-from), transparent, var(--tw-gradient-to, rgba(0, 0, 0, 0));
   }
@@ -176390,6 +177348,10 @@ select {
 
   .\32xl\:focus\:via-pink-900:focus {
     --tw-gradient-stops: var(--tw-gradient-from), #831843, var(--tw-gradient-to, rgba(131, 24, 67, 0));
+  }
+
+  .\32xl\:focus\:via-star-wars:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), #FFE300, var(--tw-gradient-to, rgba(255, 227, 0, 0));
   }
 
   .\32xl\:to-transparent {
@@ -176728,6 +177690,10 @@ select {
     --tw-gradient-to: #831843;
   }
 
+  .\32xl\:to-star-wars {
+    --tw-gradient-to: #FFE300;
+  }
+
   .\32xl\:hover\:to-transparent:hover {
     --tw-gradient-to: transparent;
   }
@@ -177064,6 +178030,10 @@ select {
     --tw-gradient-to: #831843;
   }
 
+  .\32xl\:hover\:to-star-wars:hover {
+    --tw-gradient-to: #FFE300;
+  }
+
   .\32xl\:focus\:to-transparent:focus {
     --tw-gradient-to: transparent;
   }
@@ -177398,6 +178368,10 @@ select {
 
   .\32xl\:focus\:to-pink-900:focus {
     --tw-gradient-to: #831843;
+  }
+
+  .\32xl\:focus\:to-star-wars:focus {
+    --tw-gradient-to: #FFE300;
   }
 
   .\32xl\:decoration-slice {
@@ -179383,6 +180357,11 @@ select {
     color: rgba(131, 24, 67, var(--tw-text-opacity));
   }
 
+  .\32xl\:text-star-wars {
+    --tw-text-opacity: 1;
+    color: rgba(255, 227, 0, var(--tw-text-opacity));
+  }
+
   .group:hover .\32xl\:group-hover\:text-transparent {
     color: transparent;
   }
@@ -179799,6 +180778,11 @@ select {
   .group:hover .\32xl\:group-hover\:text-pink-900 {
     --tw-text-opacity: 1;
     color: rgba(131, 24, 67, var(--tw-text-opacity));
+  }
+
+  .group:hover .\32xl\:group-hover\:text-star-wars {
+    --tw-text-opacity: 1;
+    color: rgba(255, 227, 0, var(--tw-text-opacity));
   }
 
   .\32xl\:focus-within\:text-transparent:focus-within {
@@ -180219,6 +181203,11 @@ select {
     color: rgba(131, 24, 67, var(--tw-text-opacity));
   }
 
+  .\32xl\:focus-within\:text-star-wars:focus-within {
+    --tw-text-opacity: 1;
+    color: rgba(255, 227, 0, var(--tw-text-opacity));
+  }
+
   .\32xl\:hover\:text-transparent:hover {
     color: transparent;
   }
@@ -180637,6 +181626,11 @@ select {
     color: rgba(131, 24, 67, var(--tw-text-opacity));
   }
 
+  .\32xl\:hover\:text-star-wars:hover {
+    --tw-text-opacity: 1;
+    color: rgba(255, 227, 0, var(--tw-text-opacity));
+  }
+
   .\32xl\:focus\:text-transparent:focus {
     color: transparent;
   }
@@ -181053,6 +182047,11 @@ select {
   .\32xl\:focus\:text-pink-900:focus {
     --tw-text-opacity: 1;
     color: rgba(131, 24, 67, var(--tw-text-opacity));
+  }
+
+  .\32xl\:focus\:text-star-wars:focus {
+    --tw-text-opacity: 1;
+    color: rgba(255, 227, 0, var(--tw-text-opacity));
   }
 
   .\32xl\:text-opacity-0 {
@@ -182679,6 +183678,21 @@ select {
     color: rgba(131, 24, 67, var(--tw-placeholder-opacity));
   }
 
+  .\32xl\:placeholder-star-wars::-moz-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(255, 227, 0, var(--tw-placeholder-opacity));
+  }
+
+  .\32xl\:placeholder-star-wars:-ms-input-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(255, 227, 0, var(--tw-placeholder-opacity));
+  }
+
+  .\32xl\:placeholder-star-wars::placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(255, 227, 0, var(--tw-placeholder-opacity));
+  }
+
   .\32xl\:focus\:placeholder-transparent:focus::-moz-placeholder {
     color: transparent;
   }
@@ -183931,6 +184945,21 @@ select {
   .\32xl\:focus\:placeholder-pink-900:focus::placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(131, 24, 67, var(--tw-placeholder-opacity));
+  }
+
+  .\32xl\:focus\:placeholder-star-wars:focus::-moz-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(255, 227, 0, var(--tw-placeholder-opacity));
+  }
+
+  .\32xl\:focus\:placeholder-star-wars:focus:-ms-input-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(255, 227, 0, var(--tw-placeholder-opacity));
+  }
+
+  .\32xl\:focus\:placeholder-star-wars:focus::placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(255, 227, 0, var(--tw-placeholder-opacity));
   }
 
   .\32xl\:placeholder-opacity-0::-moz-placeholder {
@@ -185564,6 +186593,11 @@ select {
     --tw-ring-color: rgba(131, 24, 67, var(--tw-ring-opacity));
   }
 
+  .\32xl\:ring-star-wars {
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgba(255, 227, 0, var(--tw-ring-opacity));
+  }
+
   .\32xl\:focus-within\:ring-transparent:focus-within {
     --tw-ring-color: transparent;
   }
@@ -185982,6 +187016,11 @@ select {
     --tw-ring-color: rgba(131, 24, 67, var(--tw-ring-opacity));
   }
 
+  .\32xl\:focus-within\:ring-star-wars:focus-within {
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgba(255, 227, 0, var(--tw-ring-opacity));
+  }
+
   .\32xl\:focus\:ring-transparent:focus {
     --tw-ring-color: transparent;
   }
@@ -186398,6 +187437,11 @@ select {
   .\32xl\:focus\:ring-pink-900:focus {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(131, 24, 67, var(--tw-ring-opacity));
+  }
+
+  .\32xl\:focus\:ring-star-wars:focus {
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgba(255, 227, 0, var(--tw-ring-opacity));
   }
 
   .\32xl\:ring-opacity-0 {
@@ -186976,6 +188020,10 @@ select {
     --tw-ring-offset-color: #831843;
   }
 
+  .\32xl\:ring-offset-star-wars {
+    --tw-ring-offset-color: #FFE300;
+  }
+
   .\32xl\:focus-within\:ring-offset-transparent:focus-within {
     --tw-ring-offset-color: transparent;
   }
@@ -187312,6 +188360,10 @@ select {
     --tw-ring-offset-color: #831843;
   }
 
+  .\32xl\:focus-within\:ring-offset-star-wars:focus-within {
+    --tw-ring-offset-color: #FFE300;
+  }
+
   .\32xl\:focus\:ring-offset-transparent:focus {
     --tw-ring-offset-color: transparent;
   }
@@ -187646,6 +188698,10 @@ select {
 
   .\32xl\:focus\:ring-offset-pink-900:focus {
     --tw-ring-offset-color: #831843;
+  }
+
+  .\32xl\:focus\:ring-offset-star-wars:focus {
+    --tw-ring-offset-color: #FFE300;
   }
 
   .\32xl\:filter {

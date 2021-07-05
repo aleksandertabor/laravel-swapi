@@ -24,4 +24,14 @@ class Character extends Model
     {
         return $this->belongsToMany(Film::class);
     }
+
+    /**
+     * Get all genders assigned to characters.
+     *
+     * @return array
+     */
+    public static function genders()
+    {
+        return self::distinct()->pluck('gender')->toArray();
+    }
 }

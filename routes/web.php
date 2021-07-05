@@ -1,8 +1,8 @@
 <?php
 
-use Illuminate\Foundation\Application;
-use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CharactersController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,16 +16,13 @@ use Inertia\Inertia;
 */
 
 Route::get('/', function () {
-    return Inertia::render('Welcome', [
-        'canLogin' => Route::has('login'),
-        'canRegister' => Route::has('register'),
-        'laravelVersion' => Application::VERSION,
-        'phpVersion' => PHP_VERSION,
-    ]);
-});
-
-Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+})->middleware(['auth', 'verified'])->name('home');
+
+Route::prefix('characters')->middleware(['auth', 'verified'])->group(function () {
+    Route::get('/', [CharactersController::class, 'index'])->name('characters');
+
+    Route::get('/{id}', [CharactersController::class, 'show'])->name('characters.show');
+});
 
 require __DIR__.'/auth.php';
