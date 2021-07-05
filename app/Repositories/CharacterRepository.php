@@ -17,24 +17,37 @@ class CharacterRepository implements CharacterRepositoryInterface
      */
     private $model;
 
-
     /**
      * CharacterRepository constructor.
+     *
      * @param Character $model
+     * @param Collection $filters
      */
     public function __construct(Character $model, private Collection $filters)
     {
         $this->model = $model;
     }
 
-    public function getById(int $id, $columns = ['*']) : Character
+    /**
+     * @param int $id
+     * @param array $columns
+     *
+     * @return Character
+     */
+    public function getById(int $id, array $columns = ['*']) : Character
     {
         $this->applyFilters();
 
         return $this->model->findOrFail($id, $columns);
     }
 
-    public function paginate($perPage = 10, $columns = ['*']) : LengthAwarePaginator
+    /**
+     * @param int $perPage
+     * @param array $columns
+     *
+     * @return LengthAwarePaginator
+     */
+    public function paginate($perPage = 10, array $columns = ['*']) : LengthAwarePaginator
     {
         $this->applyFilters();
 
@@ -42,6 +55,11 @@ class CharacterRepository implements CharacterRepositoryInterface
     }
 
 
+    /**
+     * @param Collection $data
+     *
+     * @return void
+     */
     public function upsert(Collection $data) : void
     {
         $data->transform(function ($item, $key) {
@@ -59,6 +77,12 @@ class CharacterRepository implements CharacterRepositoryInterface
         $this->model->upsert($data->toArray(), ['api_id']);
     }
 
+    /**
+     * @param int $id
+     * @param Collection $data
+     *
+     * @return void
+     */
     public function update(int $id, Collection $data) : void
     {
         $customer = $this->getById($id);
@@ -66,11 +90,19 @@ class CharacterRepository implements CharacterRepositoryInterface
         $customer->update($data->toArray());
     }
 
+    /**
+     * @param Filter $filter
+     *
+     * @return void
+     */
     public function addFilter(Filter $filter) : void
     {
         $this->filters->push($filter);
     }
 
+    /**
+     * @return void
+     */
     protected function applyFilters() : void
     {
         foreach ($this->filters as $filter) {

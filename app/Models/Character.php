@@ -30,7 +30,7 @@ class Character extends Model
      *
      * @return array
      */
-    public static function genders()
+    public static function genders() : array
     {
         return self::distinct()->pluck('gender')->toArray();
     }

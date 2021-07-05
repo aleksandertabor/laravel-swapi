@@ -64,7 +64,7 @@ class FilterCharactersRequest extends FormRequest
      *
      * @return array
      */
-    public function genders()
+    public function genders() : array
     {
         return Character::genders();
     }

@@ -14,7 +14,7 @@ class FetchCharacters extends Command
      *
      * @var string
      */
-    protected $signature = 'swapi:fetch-characters {number=50}';
+    protected $signature = 'swapi:fetch-characters {amount=50}';
 
     /**
      * The console command description.
@@ -43,7 +43,7 @@ class FetchCharacters extends Command
         $this->comment("Start fetching characters...");
 
         try {
-            $characters = $swapiRepository->getCharacters($this->argument('number'));
+            $characters = $swapiRepository->getCharacters($this->argument('amount'));
 
             $characterRepository->upsert($characters);
 

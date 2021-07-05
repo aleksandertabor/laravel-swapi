@@ -50,7 +50,7 @@
 
                                 <template
                                     v-for="(value, key) in character"
-                                    :key="character.id"
+                                    :key="key"
                                 >
                                     <div class="mt-4">
                                         <p>
