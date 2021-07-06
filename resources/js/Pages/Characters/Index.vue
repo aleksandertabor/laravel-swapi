@@ -391,6 +391,7 @@ export default {
     methods: {
         reset() {
             this.form = mapValues(this.form, () => null);
+            this.form.gender = '';
         },
         starWarsYear(year) {
             if (year === null || year === '') {
