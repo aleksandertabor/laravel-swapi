@@ -31,8 +31,8 @@ class CreateCharactersTable extends Migration
             $table->json('species');
             $table->json('starships');
             $table->json('vehicles');
-            $table->timestamp('created');
-            $table->timestamp('edited');
+            $table->timestamp('created')->nullable();
+            $table->timestamp('edited')->nullable();
             $table->string('url')->unique();
             $table->timestamps();
         });
